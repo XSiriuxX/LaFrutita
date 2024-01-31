@@ -15,61 +15,40 @@
         class="w-full h-full absolute opacity-75 bg-black"
       ></span>
     </div>
-
-    <div
-      class="container relative mx-auto w-full lg:w-4/12 px-4 ml-auto mr-auto text-center"
-    >
-      <h1 class="text-white font-semibold text-5xl">
-        Definiendo la Elegancia, Redefiniendo el Estilo:
-      </h1>
-      <p class="text-white mt-4 text-lg text-blueGray-200">
-        Eleva tu guardarropa con moda masculina atemporal.
-      </p>
-    </div>
   </div>
 
   <div class="container mx-auto px-4 -mt-24">
-    <div class="flex flex-wrap">
-      <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+    <div
+      class="relative flex bg-white w-full mb-8 shadow-lg rounded-sm px-4 py-5 justify-center"
+    >
+      <div class="w-56 justify-center flex flex-col mx-20 text-center">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg px-4 py-5"
+          class="w-24 h-24 mb-5 shadow-lg rounded-full bg-[#F76096] mx-auto items-center"
         >
-          <div
-            class="w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400 mx-auto"
-          ></div>
-          <h6 class="text-xl font-semibold">Calidad Suprema</h6>
-          <p class="mt-2 mb-4">
-            Artesanía inigualable, cada prenda es una obra premiada.
-          </p>
+          <p class="flex justify-center my-8 text-white">Prueba</p>
         </div>
+        <p>Moda que mezcla lo clásico con lo moderno, siempre a la moda.</p>
       </div>
 
-      <div class="w-full md:w-4/12 px-4 text-center">
-        <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg px-4 py-5"
-        >
-          <div
-            class="w-12 h-12 mb-5 shadow-lg rounded-full bg-slate-200 mx-auto"
-          ></div>
-          <h6 class="text-xl font-semibold">Estilo Distintivo</h6>
-          <p class="mt-2 mb-4">
-            Moda que mezcla lo clásico con lo moderno, siempre a la moda.
-          </p>
+      <div class="w-56 justify-center flex flex-col mx-20 text-center">
+        <div class="w-24 h-24 mb-5 shadow-lg rounded-full bg-[#F76096] mx-auto">
+          <p class="flex justify-center my-8 text-white">Prueba</p>
         </div>
+        <p>Moda que mezcla lo clásico con lo moderno, siempre a la moda.</p>
       </div>
 
-      <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-        <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg px-4 py-5"
-        >
-          <div
-            class="w-12 h-12 mb-5 shadow-lg rounded-full bg-green-300 mx-auto"
-          ></div>
-          <h6 class="text-xl font-semibold">Autenticidad Garantizada</h6>
-          <p class="mt-2 mb-4">
-            Tu estilo único con moda auténtica y verificada.
-          </p>
+      <div class="w-56 justify-center flex flex-col mx-20 text-center">
+        <div class="w-24 h-24 mb-5 shadow-lg rounded-full bg-[#F76096] mx-auto">
+          <p class="flex justify-center my-8 text-white">Prueba</p>
         </div>
+        <p>Moda que mezcla lo clásico con lo moderno, siempre a la moda.</p>
+      </div>
+
+      <div class="w-56 justify-center flex flex-col mx-16 text-center">
+        <div class="w-24 h-24 mb-5 shadow-lg rounded-full bg-[#F76096] mx-auto">
+          <p class="flex justify-center my-8 text-white">Prueba</p>
+        </div>
+        <p>Moda que mezcla lo clásico con lo moderno, siempre a la moda.</p>
       </div>
     </div>
   </div>
@@ -78,8 +57,9 @@
 <section
   *ngIf="products && products.length > 0"
   style="max-width: 1600px"
-  class="relative mx-auto"
+  class="relative mx-auto flex flex-col justify-center mt-16"
 >
+  <h2 class="text-2xl flex justify-center">NUESTROS PRODUCTOS TOP</h2>
   <app-carousel [products]="products.reverse()" />
 </section>
 
