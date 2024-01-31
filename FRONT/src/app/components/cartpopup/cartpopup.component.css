@@ -1,0 +1,6 @@
+@media (min-width: 1600px) {
+  .cart-container {
+    left: 50%;
+    transform: translate(385px, 0);
+  }
+}

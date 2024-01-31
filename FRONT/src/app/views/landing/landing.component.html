@@ -1,0 +1,112 @@
+<app-navbar></app-navbar>
+
+<section class="relative bg-blueGray-50">
+  <div
+    class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
+  >
+    <div
+      class="absolute top-0 w-full h-full bg-center bg-cover"
+      style="
+        background-image: url('https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Y19saW1pdCxoXzE2MDAsd18xNjAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3RqZGhwZjdxMXp5OWl4N2FsaGhx/template_primary');
+      "
+    >
+      <span
+        id="blackOverlay"
+        class="w-full h-full absolute opacity-75 bg-black"
+      ></span>
+    </div>
+
+    <div
+      class="container relative mx-auto w-full lg:w-4/12 px-4 ml-auto mr-auto text-center"
+    >
+      <h1 class="text-white font-semibold text-5xl">
+        Definiendo la Elegancia, Redefiniendo el Estilo:
+      </h1>
+      <p class="text-white mt-4 text-lg text-blueGray-200">
+        Eleva tu guardarropa con moda masculina atemporal.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 -mt-24">
+    <div class="flex flex-wrap">
+      <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+        <div
+          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg px-4 py-5"
+        >
+          <div
+            class="w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400 mx-auto"
+          ></div>
+          <h6 class="text-xl font-semibold">Calidad Suprema</h6>
+          <p class="mt-2 mb-4">
+            Artesanía inigualable, cada prenda es una obra premiada.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full md:w-4/12 px-4 text-center">
+        <div
+          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg px-4 py-5"
+        >
+          <div
+            class="w-12 h-12 mb-5 shadow-lg rounded-full bg-slate-200 mx-auto"
+          ></div>
+          <h6 class="text-xl font-semibold">Estilo Distintivo</h6>
+          <p class="mt-2 mb-4">
+            Moda que mezcla lo clásico con lo moderno, siempre a la moda.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+        <div
+          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg px-4 py-5"
+        >
+          <div
+            class="w-12 h-12 mb-5 shadow-lg rounded-full bg-green-300 mx-auto"
+          ></div>
+          <h6 class="text-xl font-semibold">Autenticidad Garantizada</h6>
+          <p class="mt-2 mb-4">
+            Tu estilo único con moda auténtica y verificada.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  *ngIf="products && products.length > 0"
+  style="max-width: 1600px"
+  class="relative mx-auto"
+>
+  <app-carousel [products]="products.reverse()" />
+</section>
+
+<section *ngIf="products && products.length > 0">
+  <app-cards [products]="products.slice(28, 36)"></app-cards>
+</section>
+
+<section class="dark:bg-slate-600 dark:text-white py-8">
+  <div class="container py-8 px-6 mx-auto">
+    <a
+      class="uppercase tracking-wide no-underline hover:no-underline font-bold text-xl"
+      href="#"
+    >
+      About
+    </a>
+
+    <p class="mt-4">
+      Es un innovador e-commerce utilizando el stack MEAN (MongoDB, Express.js,
+      Angular y Node.js) combinado con tecnologías avanzadas como el sistema de
+      paquetado pnpm, un lenguaje estricto de TypeScript y CSS desarrollado con
+      Tailwind para crear una plataforma de compra en línea robusta y segura.
+      Con características de autenticación de usuarios, carrito de compras,
+      integración de MercadoPago y un panel de administración, ofrecemos una
+      experiencia de compra fluida y un control completo sobre los productos y
+      ventas.
+    </p>
+  </div>
+</section>
+
+<app-footer></app-footer>

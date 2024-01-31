@@ -1,0 +1,167 @@
+<section class="flex gap-10 justify-center">
+  <details class="group [&_summary::-webkit-details-marker]:hidden">
+    <summary
+      class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+    >
+      <span class="text-sm font-medium"> Categorias</span>
+
+      <span class="transition group-open:-rotate-180">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-4 w-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <div
+      class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 w-40 rounded border border-gray-200 bg-white"
+    >
+      <ul class="space-y-1 border-t border-gray-200 p-4">
+        <li *ngFor="let category of categories">
+          <label
+            for="{{ category.categoryName }}"
+            class="inline-flex items-center gap-2"
+          >
+            <input
+              type="checkbox"
+              id="{{ category.categoryName }}"
+              class="h-5 w-5 rounded border-gray-300"
+              [(ngModel)]="category.selected"
+              [value]="category.categoryName"
+              (change)="applyFilters()"
+            />
+
+            <span class="text-sm font-medium text-gray-700">
+              {{ category.categoryName }}
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="group [&_summary::-webkit-details-marker]:hidden">
+    <summary
+      class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+    >
+      <span class="text-sm font-medium"> Precio </span>
+
+      <span class="transition group-open:-rotate-180">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-4 w-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <div
+      class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 w-60 rounded border border-gray-200 bg-white"
+    >
+      <div class="border-t border-gray-200 p-4 flex justify-between gap-4">
+        <label for="FilterPriceFrom" class="flex items-center gap-2">
+          <span class="text-sm text-gray-600">$</span>
+
+          <input
+            type="number"
+            id="FilterPriceFrom"
+            placeholder="Desde"
+            class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+            [(ngModel)]="minPrice"
+            (ngModelChange)="applyFilters()"
+          />
+        </label>
+        -
+        <label for="FilterPriceTo" class="flex items-center gap-2">
+          <span class="text-sm text-gray-600">$</span>
+
+          <input
+            type="number"
+            id="FilterPriceTo"
+            placeholder="Hasta"
+            class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+            [(ngModel)]="maxPrice"
+            (ngModelChange)="applyFilters()"
+          />
+        </label>
+      </div>
+    </div>
+  </details>
+
+  <details class="group [&_summary::-webkit-details-marker]:hidden">
+    <summary
+      class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+    >
+      <span class="text-sm font-medium"> Ordenar</span>
+
+      <span class="transition group-open:-rotate-180">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-4 w-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <div
+      class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 w-40 rounded border border-gray-200 bg-white"
+    >
+      <ul class="space-y-1 border-t border-gray-200 p-4">
+        <li (click)="setSorting('name', true)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            A - Z
+          </label>
+        </li>
+        <li (click)="setSorting('name', false)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            Z - A
+          </label>
+        </li>
+        <li (click)="setSorting('price', true)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            Menor precio
+          </label>
+        </li>
+        <li (click)="setSorting('price', false)">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            Mayor precio
+          </label>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <summary
+    class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+  >
+    <span class="text-sm font-medium" (click)="resetFilters()"> Resetear</span>
+  </summary>
+</section>

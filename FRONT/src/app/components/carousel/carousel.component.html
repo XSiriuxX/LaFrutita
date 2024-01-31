@@ -1,0 +1,67 @@
+<div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+  <div class="w-full relative flex items-center justify-center">
+    <button
+      aria-label="slide backward"
+      class="mr-5 left-8 w-8 h-8 bg-gray-200 rounded-full justify-center flex items-center"
+      (click)="goPrev()"
+    >
+      <svg
+        width="8"
+        height="14"
+        viewBox="0 0 8 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 1L1 7L7 13"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+      <div
+        id="slider"
+        class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center transition ease-out duration-700"
+      >
+        <section
+          *ngFor="let product of products"
+          class="border border-solid min-w-96"
+        >
+          <div class="p-6 flex flex-col w-80">
+            <a [routerLink]="'/product/' + product?._id">
+              <img class="hover:grow" [src]="product?.productImage" />
+
+              <p class="font-bold text-lg pt-3 flex justify-center">
+                {{ product?.productName }}
+              </p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <button
+      aria-label="slide forward"
+      class="ml-5 right-8 w-8 h-8 bg-gray-200 rounded-full justify-center flex items-center"
+      (click)="goNext()"
+    >
+      <svg
+        width="8"
+        height="14"
+        viewBox="0 0 8 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 1L7 7L1 13"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+</div>

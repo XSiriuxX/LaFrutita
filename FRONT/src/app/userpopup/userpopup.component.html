@@ -1,0 +1,16 @@
+<div
+  class="cart-container absolute right-6 top-16 z-50 w-screen max-w-sm border border-gray-600 bg-gray-100 px-4 py-8 sm:px-6 lg:px-8"
+  aria-modal="true"
+  role="dialog"
+  tabindex="-1"
+>
+  <div class="mt-4 space-y-6">
+    <ul *ngIf="isLoggedIn">
+      <li routerLink="/userdetail">Detalle del Usuario</li>
+      <li (click)="logOut()">Cerrar Sesion</li>
+    </ul>
+    <ul *ngIf="!isLoggedIn">
+      <li routerLink="/login">Iniciar Sesion</li>
+    </ul>
+  </div>
+</div>
