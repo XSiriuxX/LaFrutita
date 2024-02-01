@@ -2,8 +2,6 @@ import { Component, SimpleChanges } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
-import { PaymentsService } from 'src/app/services/payments.service';
-import { Order } from 'src/app/models/order.model';
 
 @Component({
   selector: 'app-cart',
@@ -27,10 +25,7 @@ export class CartComponent {
   envioSeleccionado: boolean = true;
   envio: number = 4.99;
 
-  constructor(
-    private cartService: CartService,
-    private paymentsService: PaymentsService
-  ) {}
+  constructor(private cartService: CartService) {}
 
   ngOnInit() {
     this.userId = localStorage.getItem('ID') || '';
@@ -95,30 +90,5 @@ export class CartComponent {
     this.cartService
       .addProduct(this.updatedProduct)
       .subscribe((res) => this.getProductsCart());
-  }
-
-  createOrder() {
-    const productsList: Order[] = this.cart.map((product): Order => {
-      return {
-        id: product.productId,
-        title: product.name,
-        unit_price: product.productPrice,
-        currency_id: 'PEN',
-        quantity: product.quantity,
-        description: product.description,
-        picture_url: product.productImage,
-      };
-    });
-
-    const order = { user_id: this.userId, items: productsList };
-    this.paymentsService.createOrder(order).subscribe(
-      (res) => {
-        console.log('Orden creada con éxito', res);
-        window.location.href = res.payment_url;
-      },
-      (err) => {
-        console.error('Error al crear la orden', err);
-      }
-    );
   }
 }

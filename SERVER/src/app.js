@@ -2,12 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
 require("dotenv").config();
-const {
-  userRoutes,
-  productRoutes,
-  categoryRoutes,
-  paymentRoutes,
-} = require("./routes/allroutes");
+const { productRoutes } = require("./routes/allroutes");
 
 const app = express();
 
@@ -18,9 +13,6 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/user", userRoutes);
 app.use("/product", productRoutes);
-app.use("/category", categoryRoutes);
-app.use("/payments", paymentRoutes);
 
 module.exports = app;

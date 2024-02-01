@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 
 const Product = require("../models/Product.model");
-const Category = require("../models/Category.model");
-const Rating = require("../models/Rating.model");
 
 const product = {};
 
@@ -13,10 +11,13 @@ product.getProducts = async (req, res) => {
     const products = await Product.find();
     const response = products.map((product) => ({
       _id: product._id,
-      productName: product.productName,
-      productImage: product.productImage,
-      productPrice: product.productPrice,
-      categories: product.categories,
+      NOMBRE: product.NOMBRE,
+      IMAGEN:
+        product.IMAGEN.trim() !== ""
+          ? product.IMAGEN
+          : "https://www.yiwubazaar.com/resources/assets/images/default-product.jpg",
+      PRECIO: product.PRECIO,
+      CATEGORIAS: product.CATEGORIAS,
     }));
     res.status(200).json(response);
   } catch (error) {

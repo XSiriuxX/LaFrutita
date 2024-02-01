@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { max } from 'rxjs';
-import { CategoryService } from 'src/app/services/category.service';
 import { FiltersService } from 'src/app/services/filters.service';
 
 @Component({
@@ -17,23 +16,7 @@ export class FiltersComponent {
   @Input() ascending: boolean = false;
   @Output() filtersApplied: EventEmitter<any> = new EventEmitter();
 
-  constructor(
-    public categoryService: CategoryService,
-    public filtersService: FiltersService
-  ) {}
-
-  ngOnInit() {
-    this.getCategories();
-  }
-
-  getCategories() {
-    this.categoryService.getAllCategories().subscribe((res) => {
-      this.categories = res.map((category: any) => ({
-        ...category,
-        selected: false,
-      }));
-    });
-  }
+  constructor(public filtersService: FiltersService) {}
 
   applyFilters() {
     // Obtener solo las categorías seleccionadas

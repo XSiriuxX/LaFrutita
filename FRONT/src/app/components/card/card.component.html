@@ -2,10 +2,10 @@
   <img
     [routerLink]="'/product/' + product?._id"
     class="hover:grow"
-    [src]="product?.productImage"
+    [src]="product?.IMAGEN"
   />
   <div class="pt-3 flex items-center justify-between">
-    <p class="font-bold">{{ product?.productName }}</p>
+    <p class="font-bold">{{ product?.NOMBRE }}</p>
     <div class="flex gap-3">
       <button>
         <svg
@@ -37,5 +37,5 @@
       </button>
     </div>
   </div>
-  <p class="pt-1">{{ product?.productPrice }}</p>
+  <p class="pt-1">{{ product?.PRECIO }}</p>
 </div>

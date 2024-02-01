@@ -33,25 +33,25 @@ export class FiltersService {
       return filteredProducts;
     }
 
-    if (categories.length > 0) {
-      filteredProducts = filteredProducts.filter((product) =>
-        categories.some((category: any) =>
-          product.categories.includes(category)
-        )
-      );
-    } else {
-      filteredProducts = [...this.copyProducts];
-    }
+    // if (categories.length > 0) {
+    //   filteredProducts = filteredProducts.filter((product) =>
+    //     categories.some((category: any) =>
+    //       product.categories.includes(category)
+    //     )
+    //   );
+    // } else {
+    //   filteredProducts = [...this.copyProducts];
+    // }
 
     if (minPrice !== 0) {
       filteredProducts = filteredProducts.filter(
-        (product) => product.productPrice >= minPrice
+        (product) => product.PRECIO >= minPrice
       );
     }
 
     if (maxPrice !== 0) {
       filteredProducts = filteredProducts.filter(
-        (product) => product.productPrice <= maxPrice
+        (product) => product.PRECIO <= maxPrice
       );
     }
 
@@ -74,7 +74,7 @@ export class FiltersService {
   searchProductsByName(searchTerm: string): Product[] {
     let products = [...this.copyProducts];
     return products.filter((product) =>
-      product.productName.toLowerCase().includes(searchTerm.toLowerCase())
+      product.NOMBRE.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }
 
@@ -86,8 +86,8 @@ export class FiltersService {
       .slice()
       .sort((a, b) =>
         ascending
-          ? a.productName.localeCompare(b.productName)
-          : b.productName.localeCompare(a.productName)
+          ? a.NOMBRE.localeCompare(b.NOMBRE)
+          : b.NOMBRE.localeCompare(a.NOMBRE)
       );
   }
 
@@ -97,10 +97,6 @@ export class FiltersService {
   ): Product[] {
     return products
       .slice()
-      .sort((a, b) =>
-        ascending
-          ? a.productPrice - b.productPrice
-          : b.productPrice - a.productPrice
-      );
+      .sort((a, b) => (ascending ? a.PRECIO - b.PRECIO : b.PRECIO - a.PRECIO));
   }
 }

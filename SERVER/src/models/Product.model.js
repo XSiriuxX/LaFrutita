@@ -2,60 +2,14 @@ const { Schema, model } = require("mongoose");
 
 const productSchema = new Schema(
   {
-    productName: {
-      type: String,
-      default: "",
-    },
-    productDescription: {
-      type: String,
-      default: "",
-    },
-    stockQuantity: {
-      type: Number,
-      default: 0,
-    },
-    productPrice: {
-      type: Number,
-      default: 0,
-    },
-    categories: [{ type: String }],
-    productImage: {
-      type: String,
-      default: "",
-    },
-    manufacturer: {
-      type: String,
-      default: "",
-    },
-    modelNumber: {
-      type: String,
-      default: "",
-    },
-    ratingsAndComments: [{ type: Schema.Types.ObjectId, ref: "Rating" }],
-    promotionsAndDiscounts: [
-      {
-        promotionDescription: String,
-        discountPercentage: Number,
-        startDate: Date,
-        endDate: Date,
-      },
-    ],
-    salesHistory: [
-      {
-        orderID: { type: Schema.Types.ObjectId, ref: "Order" },
-        dateSold: Date,
-      },
-    ],
-    customTags: { type: [String], default: [] },
-    variantOptions: {
-      type: [
-        {
-          optionName: String,
-          optionValues: [String],
-        },
-      ],
-      default: [],
-    },
+    CATEGORIAS: { type: String, required: true },
+    TIPO: { type: String },
+    NOMBRE: { type: String, required: true },
+    DESCRIPCION: { type: String },
+    PRECIO: { type: Number, required: true },
+    DISPONIBILIDAD: { type: String, required: true },
+    TIEMPO_DE_PREPARACION: { type: Number, required: true },
+    IMAGEN: { type: String },
   },
   {
     timestamps: true,

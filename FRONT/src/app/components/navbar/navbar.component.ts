@@ -1,5 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
+
 import { DarkModeService } from 'src/app/services/dark-mode.service';
 
 @Component({
@@ -12,14 +12,7 @@ export class NavbarComponent {
   showUser: boolean = false;
   isLoggedIn: boolean = false;
 
-  constructor(
-    public darkModeService: DarkModeService,
-    private authService: AuthService
-  ) {}
-
-  ngOnInit(): void {
-    this.isLoggedIn = this.authService.isLoggedIn();
-  }
+  constructor(public darkModeService: DarkModeService) {}
 
   toggleUser() {
     this.showUser = !this.showUser;

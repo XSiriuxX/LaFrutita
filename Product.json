@@ -1,0 +1,1252 @@
+[
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Papaya",
+    "DESCRIPCION": "210 gramos de papaya fresca",
+    "PRECIO": 11.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Piña",
+    "DESCRIPCION": "210 gramos de piña fresca",
+    "PRECIO": 11.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Surtido",
+    "DESCRIPCION": "Combinacion de papaya, piña, platano y fresa",
+    "PRECIO": 11.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Mango",
+    "DESCRIPCION": "210 gramos de mango fresco",
+    "PRECIO": 12.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Mandarina",
+    "DESCRIPCION": "Zumo fresco de mandarina",
+    "PRECIO": 12.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Maracuyá",
+    "DESCRIPCION": "Zumo fresco de maracuya",
+    "PRECIO": 12.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Chirimoya",
+    "DESCRIPCION": "210 gramos de chirimoya fresca",
+    "PRECIO": 13.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Lúcuma",
+    "DESCRIPCION": "210 gramos de lúcuma fresca",
+    "PRECIO": 13.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Guanábana",
+    "DESCRIPCION": "210 gramos de guanábana fresca",
+    "PRECIO": 13.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Fresa",
+    "DESCRIPCION": "210 gramos de fresa fresca",
+    "PRECIO": 13.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Tradicionales",
+    "NOMBRE": "Naranja",
+    "DESCRIPCION": "Zumo fresco de naranja",
+    "PRECIO": 13.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "La engreída",
+    "DESCRIPCION": "Fresa con leche",
+    "PRECIO": 15.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Jugo verde",
+    "DESCRIPCION": "Piña, espinaca, pepinillo y apio",
+    "PRECIO": 17.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "La de siempre",
+    "DESCRIPCION": "Papaya con piña",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Conquistador",
+    "DESCRIPCION": "Guánabana con piña",
+    "PRECIO": 14.5,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Bella",
+    "DESCRIPCION": "Fresa, naranja y mango",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Maracumango",
+    "DESCRIPCION": "Mango con maracuyá",
+    "PRECIO": 14.5,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Piel",
+    "DESCRIPCION": "Chirimoya con mandarina",
+    "PRECIO": 14.5,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Agilito",
+    "DESCRIPCION": "Fresa con piña",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Energizante",
+    "DESCRIPCION": "Fresa con naranja",
+    "PRECIO": 14.5,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Poderoso",
+    "DESCRIPCION": "Arándanos, fresa y leche",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Lánzate",
+    "DESCRIPCION": "Piña, papaya y naranja",
+    "PRECIO": 15.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Atrevido",
+    "DESCRIPCION": "Fresa, piña y naranja",
+    "PRECIO": 14.5,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Apasionado",
+    "DESCRIPCION": "Fresa, chirimoya y leche",
+    "PRECIO": 14.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Acaríciame",
+    "DESCRIPCION": "Fresa, plátano y leche",
+    "PRECIO": 14.5,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Fogoso",
+    "DESCRIPCION": "Mango, lúcuma y leche",
+    "PRECIO": 14.5,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "La frutita",
+    "DESCRIPCION": "Mango, durazno y piña",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Jugos",
+    "TIPO": "Combinados",
+    "NOMBRE": "Jugo especial",
+    "DESCRIPCION": "Sabor tradicional",
+    "PRECIO": 14.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Mango",
+    "DESCRIPCION": "210 gramos de mango fresco",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Fresa",
+    "DESCRIPCION": "210 gramos de fresa fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Naranja",
+    "DESCRIPCION": "210 gramos de naranja fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Maracuyá",
+    "DESCRIPCION": "210 gramos de maracuyá fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Limón",
+    "DESCRIPCION": "210 gramos de limón fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Piña",
+    "DESCRIPCION": "210 gramos de piña fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Chicha",
+    "DESCRIPCION": "210 gramos de chicha fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Frozen",
+    "TIPO": "",
+    "NOMBRE": "Combinación de dos frutas",
+    "DESCRIPCION": "210 gramos de combinación de dos frutas fresca",
+    "PRECIO": 16.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Milkshake",
+    "TIPO": "",
+    "NOMBRE": "Fresa",
+    "DESCRIPCION": "Pulpa de fruta selecta, congelada con leche, con crema batida",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Milkshake",
+    "TIPO": "",
+    "NOMBRE": "Mango",
+    "DESCRIPCION": "210 gramos de mango fresco",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Milkshake",
+    "TIPO": "",
+    "NOMBRE": "Lúcuma",
+    "DESCRIPCION": "210 gramos de lúcuma fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Milkshake",
+    "TIPO": "",
+    "NOMBRE": "Chirimoya",
+    "DESCRIPCION": "210 gramos de chirimoya fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Milkshake",
+    "TIPO": "",
+    "NOMBRE": "Oreo",
+    "DESCRIPCION": "210 gramos de oreo fresca",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Smoothies",
+    "TIPO": "",
+    "NOMBRE": "Fresa",
+    "DESCRIPCION": "210 gramos de fresa fresca",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Smoothies",
+    "TIPO": "",
+    "NOMBRE": "Maracuyá",
+    "DESCRIPCION": "210 gramos de maracuyá fresca",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Smoothies",
+    "TIPO": "",
+    "NOMBRE": "Piña",
+    "DESCRIPCION": "210 gramos de piña fresca",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Smoothies",
+    "TIPO": "",
+    "NOMBRE": "Mango",
+    "DESCRIPCION": "210 gramos de mango fresca",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Smoothies",
+    "TIPO": "",
+    "NOMBRE": "Arándanos",
+    "DESCRIPCION": "210 gramos de arándanos fresca",
+    "PRECIO": 22.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bowl",
+    "TIPO": "",
+    "NOMBRE": "Smothie bowl arándanos",
+    "DESCRIPCION": "Base de arandanos y naranja",
+    "PRECIO": 32.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bowl",
+    "TIPO": "",
+    "NOMBRE": "Smothie bowl",
+    "DESCRIPCION": "Base de fruta congelada y naranja",
+    "PRECIO": 30.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bowl",
+    "TIPO": "",
+    "NOMBRE": "Avena bowl",
+    "DESCRIPCION": "Base de avena, granola,fruta de estación y toppings de frutos secos",
+    "PRECIO": 30.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Yogurt Parfait",
+    "TIPO": "",
+    "NOMBRE": "Griego Pequeño",
+    "DESCRIPCION": "Base de fruta, yogurt, granola, topping de frutos secos y miel de abeja",
+    "PRECIO": 17.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Yogurt Parfait",
+    "TIPO": "",
+    "NOMBRE": "Griego Mediano",
+    "DESCRIPCION": "Base de fruta, yogurt, granola, topping de frutos secos y miel de abeja",
+    "PRECIO": 20.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Yogurt Parfait",
+    "TIPO": "",
+    "NOMBRE": "Griego Grande",
+    "DESCRIPCION": "Base de fruta, yogurt, granola, topping de frutos secos y miel de abeja",
+    "PRECIO": 24.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Yogurt Parfait",
+    "TIPO": "",
+    "NOMBRE": "Saborizado",
+    "DESCRIPCION": "Base de fruta, yogurt, granola, topping de frutos secos y miel de abeja",
+    "PRECIO": 15.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Yogurt Parfait",
+    "TIPO": "",
+    "NOMBRE": "Saborizado",
+    "DESCRIPCION": "Base de fruta, yogurt, granola, topping de frutos secos y miel de abeja",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Yogurt Parfait",
+    "TIPO": "",
+    "NOMBRE": "Saborizado",
+    "DESCRIPCION": "Base de fruta, yogurt, granola, topping de frutos secos y miel de abeja",
+    "PRECIO": 20.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Postres",
+    "TIPO": "",
+    "NOMBRE": "Queque",
+    "DESCRIPCION": "Queque La Frutita",
+    "PRECIO": 7.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Postres",
+    "TIPO": "",
+    "NOMBRE": "Cheesecake",
+    "DESCRIPCION": "Base de arandanos, maracuya y fresa",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Postres",
+    "TIPO": "",
+    "NOMBRE": "Alfajores",
+    "DESCRIPCION": "Alfajores de maicena relleno de manjar blanco",
+    "PRECIO": 7.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Postres",
+    "TIPO": "",
+    "NOMBRE": "Gelatina Charlotte",
+    "DESCRIPCION": "",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Postres",
+    "TIPO": "",
+    "NOMBRE": "Torta",
+    "DESCRIPCION": "",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Postres",
+    "TIPO": "",
+    "NOMBRE": "Pie de lima limón",
+    "DESCRIPCION": "",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Postres",
+    "TIPO": "",
+    "NOMBRE": "Marquesa",
+    "DESCRIPCION": "",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas frías",
+    "NOMBRE": "Limonada personal",
+    "DESCRIPCION": "",
+    "PRECIO": 10.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 5,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas frías",
+    "NOMBRE": "Limonada La Frutita",
+    "DESCRIPCION": "Base de aguaymanto, naranja y limón",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 5,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas frías",
+    "NOMBRE": "Café Dalgona",
+    "DESCRIPCION": "Base de café con leche",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 5,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas frías",
+    "NOMBRE": "Chicha",
+    "DESCRIPCION": "",
+    "PRECIO": 9.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas frías",
+    "NOMBRE": "Agua",
+    "DESCRIPCION": "San Mateo de 500ml",
+    "PRECIO": 5.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": null,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas calientes",
+    "NOMBRE": "Café americano",
+    "DESCRIPCION": "Café expreso de gran cuerpo con agua caliente",
+    "PRECIO": 8.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 5,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas calientes",
+    "NOMBRE": "Café expreso",
+    "DESCRIPCION": "Café expreso de gran cuerpo",
+    "PRECIO": 7.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 5,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas calientes",
+    "NOMBRE": "Capuccino con crema",
+    "DESCRIPCION": "Café expreso con leche montada y chantilly",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 5,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas calientes",
+    "NOMBRE": "Chocolate caliente",
+    "DESCRIPCION": "100% cacao",
+    "PRECIO": 13.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas calientes",
+    "NOMBRE": "Infusiones clásicas",
+    "DESCRIPCION": "",
+    "PRECIO": 6.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas calientes",
+    "NOMBRE": "Infusiones frutos del bosque",
+    "DESCRIPCION": "",
+    "PRECIO": 8.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas calientes",
+    "NOMBRE": "Tepiteado",
+    "DESCRIPCION": "Pisco y frutos rojos",
+    "PRECIO": 19.9,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas refrescantes",
+    "NOMBRE": "La Frutita",
+    "DESCRIPCION": "Limón, naranja, te tropical, trozos de limón y fresas, crema de coco y hielo",
+    "PRECIO": 17.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas refrescantes",
+    "NOMBRE": "Activate",
+    "DESCRIPCION": "Hojas de hierba buena, limón, kion, piña, hielo y granadina",
+    "PRECIO": 17.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Bebidas",
+    "TIPO": "Bebidas refrescantes",
+    "NOMBRE": "La Green",
+    "DESCRIPCION": "Manzana verde, espinaca, hierba buena y limón",
+    "PRECIO": 17.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Ensaladas",
+    "TIPO": "Ensalada de frutas",
+    "NOMBRE": "Ensalada de frutas especial",
+    "DESCRIPCION": "Mixtura de papaya, piña, manzana, pera, granadilla, platano, tuna, mandarina y fresa",
+    "PRECIO": 19.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Ensaladas",
+    "TIPO": "Ensalada de frutas",
+    "NOMBRE": "Ensalada la frutita",
+    "DESCRIPCION": "Mixtura de papaya, piña, manzana, pera, granadilla, platano, tuna, mandarina, fresa, aguaymanto y arandanos",
+    "PRECIO": 24.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Ensaladas",
+    "TIPO": "Ensalada de vegetales",
+    "NOMBRE": "La frutita",
+    "DESCRIPCION": "Filete de pollo en trozos, lechuga, pepinillo, queso, almendras y aliño de la casa",
+    "PRECIO": 35.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Ensaladas",
+    "TIPO": "Ensalada de vegetales",
+    "NOMBRE": "Cesár",
+    "DESCRIPCION": "Sabor tradicional, escalopas de pollo, crutones de pan y tocino, lechuga y queso parmesano; servida sobre una canasta de pan frito",
+    "PRECIO": 35.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Ensaladas",
+    "TIPO": "Ensalada de vegetales",
+    "NOMBRE": "Filete de pollo",
+    "DESCRIPCION": "Acompañada de papas fritas al perejil y ensalada fresca",
+    "PRECIO": 35.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Triples",
+    "TIPO": "",
+    "NOMBRE": "Jamón y queso",
+    "DESCRIPCION": "",
+    "PRECIO": 14.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Triples",
+    "TIPO": "",
+    "NOMBRE": "Pollo, jamón y queso",
+    "DESCRIPCION": "",
+    "PRECIO": 16.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Triples",
+    "TIPO": "",
+    "NOMBRE": "Jamón, queso y durazno",
+    "DESCRIPCION": "",
+    "PRECIO": 16.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Triples",
+    "TIPO": "",
+    "NOMBRE": "Pollo con durazno",
+    "DESCRIPCION": "",
+    "PRECIO": 16.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Triples",
+    "TIPO": "",
+    "NOMBRE": "Pollo, palta, tomate y huevo",
+    "DESCRIPCION": "",
+    "PRECIO": 19.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Triples",
+    "TIPO": "",
+    "NOMBRE": "Pollo, queso, jamón y huevo",
+    "DESCRIPCION": "",
+    "PRECIO": 19.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Triples",
+    "TIPO": "",
+    "NOMBRE": "Club sandwich La frutita",
+    "DESCRIPCION": "5 pisos rellenos de pollo desmechado, huevo, tomate, tocino, jamón, queso y porción de papas al perejil",
+    "PRECIO": 40.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Sandwiches",
+    "TIPO": "",
+    "NOMBRE": "Clásico",
+    "DESCRIPCION": "Croissant, pollo, apio, manzana y mayonesa",
+    "PRECIO": 18.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Sandwiches",
+    "TIPO": "",
+    "NOMBRE": "Pruébalo La frutita",
+    "DESCRIPCION": "Croissant, pollo, durazno, apio, pecana y mayonesa",
+    "PRECIO": 20.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Sandwiches",
+    "TIPO": "",
+    "NOMBRE": "Pruébalo calientito",
+    "DESCRIPCION": "Croissant, doble queso y doble jamón",
+    "PRECIO": 17.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Pinky Burger",
+    "DESCRIPCION": "150gr de carne artesanal, Lechuga, tomate, cebolla caramelizada, queso cheddar, jamón, tocino, huevo acompañado de papas fritas con salsa bigmac",
+    "PRECIO": 30.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Sandwich chorizo especial",
+    "DESCRIPCION": "Sandwich chorizo especial (150 gr de chorizo artesanal acompañado con cebolla caramelizada queso fundido y mayonesa de cabanossi",
+    "PRECIO": 25.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Pan con asado",
+    "DESCRIPCION": "Asado de la casa, lechuga fresca, palta y salsa criolla",
+    "PRECIO": 25.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Pan con chicharron",
+    "DESCRIPCION": "150gr de chicharrón, camote frito y salda criolla",
+    "PRECIO": 25.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Wraps La frutita",
+    "DESCRIPCION": "Filete de pollo, palta, tomate, lechuga, cebolla y queso con salsa de la casa",
+    "PRECIO": 30.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Tostadas francesas",
+    "DESCRIPCION": "",
+    "PRECIO": 30.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Filete de pollo",
+    "DESCRIPCION": "Pechuga de pollo, lechuga, tomate y chimichurri de la casa",
+    "PRECIO": 25.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Caprese",
+    "DESCRIPCION": "Queso mozzarella fundido, tomate confitados y pesto",
+    "PRECIO": 25.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "A la carta",
+    "TIPO": "",
+    "NOMBRE": "Omelette",
+    "DESCRIPCION": "Jamon, queso, huevos, mermelada y tostadas multigranos",
+    "PRECIO": 25.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Arreglos Florales",
+    "TIPO": "",
+    "NOMBRE": "Box Petalos",
+    "DESCRIPCION": "6 rosas (consultar el color de disponibilidad) Acompañado de verdes estaciones Dedicatoria FRUTITA Precio detalle para esa persona especial",
+    "PRECIO": 119.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Arreglos Florales",
+    "TIPO": "",
+    "NOMBRE": "Ramo “Señorita\"",
+    "DESCRIPCION": "6 rosas de tono pastel (consultar disponibilidad de colores) Acompañado un mix de verdes estaciones Empaque de papel Coreano y Lazos unidos Dedicatoria FRUTITA Precio detalle para esa persona especial",
+    "PRECIO": 149.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Arreglos Florales",
+    "TIPO": "",
+    "NOMBRE": "Box Vibras",
+    "DESCRIPCION": "Surtido de flores Acompañado de verdes estaciones Dedicatoria FRUTITA Rosas amarillas simbolizan la alegría de vivir, el optimismo y la energía.",
+    "PRECIO": 119.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Arreglos Florales",
+    "TIPO": "",
+    "NOMBRE": "Ammy",
+    "DESCRIPCION": "6 rosas (consultar el color de disponibilidad) Acompañado de verdes estaciones Peluche mediano Chocolate Ferrero Rocher Dedicatoria FRUTITA Precio detalle para esa persona especial",
+    "PRECIO": 179.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 1",
+    "DESCRIPCION": "Bolsa Kraft La Frutita Parfait Frutado Grande Dos triángulos Triple Extremo Un Jugo Dedicatoria La Frutita Precio detalle para esa persona especial",
+    "PRECIO": 65.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 2",
+    "DESCRIPCION": "Bolsa Kraft La Frutita Globo pequeño 2 Triángulos Triples Extremos 1 Jugo 2 Alfajores de Maicena Una Dedicatoria La Frutita Precio detalle para esa persona especial",
+    "PRECIO": 85.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 3",
+    "DESCRIPCION": "Bolsa Kraft La Frutita Parfait Fritado Grande Dos triángulos Triple Extremo Un Jugo Globo Mediano 2 Alfajores de Maicena Dedicatoria La Frutita",
+    "PRECIO": 99.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 4",
+    "DESCRIPCION": "Caja de Trupan 1 Jugo 2 Triángulos Triple Extremos Ensalada de frutas 2 Alfajores de Maicena Mantel La Frutita Dedicatoria La Frutita + Pote de Yogurt + Pote de Granola",
+    "PRECIO": 119.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 5",
+    "DESCRIPCION": "Bandeja de Pino Globo Mediano 1 Jugo 2 Triángulos Triples Extremos Ensalada de fruta Especial 2 Alfajores de Maicena Mantel La Frutita Dedicatoria la Frutita + Un Pote de Yougurt + Un Pote de Granola",
+    "PRECIO": 135.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 6",
+    "DESCRIPCION": "Bandeja de Pino Un globo mediano 1 Jugo Vidrio 1 Pruébalo La Frutita dulce o salado 2 Alfajores Un Parfait Grande Vidrio Mantel La Frutita Dedicatoria La Frutita",
+    "PRECIO": 155.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 7",
+    "DESCRIPCION": "Caja de Trúpan 1 Jugo 1 Chocolate Ferrero Rocher 2 Triángulos Triple Extremo Ensalada de Fruta Especial 2 Alfajores de Maicena Mantel La Frutita Dedicatoria La Frutita +Un Pote de Yogurt +Un Pote de Granola",
+    "PRECIO": 155.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 8",
+    "DESCRIPCION": "Bandeja de Pino Globo Mediano 1 Frozen en Vidrio Peluche Mediano 1 Cheesecake de Fresa o Arándanos 1 Chocolate Ferrero Roccher Mantel La Frutita Dedicatoria La frutita",
+    "PRECIO": 170.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 9",
+    "DESCRIPCION": "Bandeja de Pino Globo Mediano 1 Jugo en Vidrio Peluche Mediano 1 Pruébalo La Frutita Dulce o Salado Parfait Pequeño Vidrio 2 Alfajores de Maicena Mantel La Frutita Dedicatoria La Frutita",
+    "PRECIO": 175.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 10",
+    "DESCRIPCION": "Bandeja de Pino 1 Frozen en Vidrio 1 Arreglo de Flores 1 Pruébalo Calientito Chocolate Ferrrero Roccher Mantel La Frutita Dedicatoria La Frutita",
+    "PRECIO": 185.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 11",
+    "DESCRIPCION": "Bandeja de Pino Peluche Pequeño 1 Jugo 1 Chocolate Heshey 2 Triángulos Triple Extremo Ensalada de Fruta Especial 2 Alfajores de Maicena Mantel La Frutita Dedicatoria La Frutita + Un Pote de Yogurt + Un Pote de Granola",
+    "PRECIO": 185.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 12",
+    "DESCRIPCION": "Bandeja de Pino 1 Peluche Mediano 2 pruebalo Calientitos 2 Jugos en Vidrio 1 Parfait Grande en Vidrio 2 Alfajores de Maicena Mantel La Frutita Dedicatoria La Frutita",
+    "PRECIO": 245.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 13",
+    "DESCRIPCION": "Bandeja de Pino Areglo de Rosas 1 Globo Burbuja Dedicatoria La Frutita Mantel la Frutita Un Chocolate Ferrero Rocher 2 Triángulo Triple Extremo Un Jugo 2 Alfajores de Maicena",
+    "PRECIO": 245.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 14",
+    "DESCRIPCION": "Bandeja de Pino 1 Globo Mediano Un arreglo de Rosas Un peluche Chico 1 Jugo en Vidrio 1 Parfait Grande en Vidrio 1 Pruebalo La Frutita dulce o salado 2 Alfajores de Maicena Dedicatoria La Frutita",
+    "PRECIO": 250.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 15",
+    "DESCRIPCION": "Bandeja de Pino 1 Globo Mediano 1 Peluche Mediano 2 Globos Pequeños 1 Ricadonna Pequeño 1 Jugo en Vidrio 1 Pruebalo Calientito 1 Chocolate Ferrero Rocher Mantel La Frutita Dedicatoria La Frutita",
+    "PRECIO": 260.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 16",
+    "DESCRIPCION": "Bandeja de Pino Areglo de Rosas Grande en Vidrio 1 Globo Burbuja 1 Peluche Mediano 1 Chocolate Ferrero Rocher 1 Jugo 2 Triángulos Triple Extremo 2 Alfajores de Maicena Mantel La Frutita Dedicatoria La Frutita",
+    "PRECIO": 279.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 17",
+    "DESCRIPCION": "Bandeja de Pino 1 Globo Burbuja Un Arreglo de Girasoles 2 Jugos en Vidrio 2 Triángulos Triples Extremo 1 Parfait Grande Vidrio 2 Alfajores de Maicena Mantel La Frutita Dedicatoria La Frutita",
+    "PRECIO": 285.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 18",
+    "DESCRIPCION": "Un Jugo la Frutita Un Globo Un Peluche Mediano Un Parfait Vidrio 2 Triángulos Extremos 2 Alfajores de Maicena 01 Taza de Decorativa 01 Arreglo de flores 01 Mantel la Frutita",
+    "PRECIO": 285.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Desayunos Personalizados",
+    "TIPO": "",
+    "NOMBRE": "Desayuno 19",
+    "DESCRIPCION": "Bandeja de Pino 1 Globo Burbuja Un Arreglo de Girasoles 1 Jugos Parfait Frutado grande 2 Triángulos Triple",
+    "PRECIO": 305.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  },
+  {
+    "CATEGORIAS": "Alfajores",
+    "TIPO": "",
+    "NOMBRE": "Alfajores de Maicena",
+    "DESCRIPCION": "Alfajores de maicena relleno de manjar blanco",
+    "PRECIO": 40.0,
+    "DISPONIBILIDAD": "Si",
+    "TIEMPO DE PREPARACION": 10,
+    "IMAGEN": ""
+  }
+]

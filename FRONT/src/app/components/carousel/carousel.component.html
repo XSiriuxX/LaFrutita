@@ -31,10 +31,10 @@
         >
           <div class="p-6 flex flex-col w-80">
             <a [routerLink]="'/product/' + product?._id">
-              <img class="hover:grow" [src]="product?.productImage" />
+              <img class="hover:grow" [src]="product?.IMAGEN" />
 
               <p class="font-bold text-lg pt-3 flex justify-center">
-                {{ product?.productName }}
+                {{ product?.NOMBRE }}
               </p>
             </a>
           </div>
