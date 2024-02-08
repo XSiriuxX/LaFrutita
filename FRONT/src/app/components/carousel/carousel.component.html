@@ -25,10 +25,7 @@
         id="slider"
         class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center transition ease-out duration-700"
       >
-        <section
-          *ngFor="let product of products"
-          class="border border-solid min-w-96"
-        >
+        <section *ngFor="let product of products" class="min-w-[300px]">
           <app-card [product]="product"></app-card>
         </section>
       </div>
