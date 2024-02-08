@@ -1,25 +1,23 @@
 <app-navbar></app-navbar>
 
 <section class="relative bg-blueGray-50">
-  <div
-    class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
-  >
+  <div class="relative h-[500px] max-w-[1600px] mx-auto">
     <div
       class="absolute top-0 w-full h-full bg-center bg-cover"
       style="
-        background-image: url('https://res-console.cloudinary.com/dp2banyxg/thumbnails/transform/v1/image/upload/Y19saW1pdCxoXzE2MDAsd18xNjAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/aW1hZ2VzL3RqZGhwZjdxMXp5OWl4N2FsaGhx/template_primary');
+        background-image: url('https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/312811944_2424875077668563_7294150550749299779_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c83dfd&_nc_eui2=AeH4tKZ2TMNyg0DeIJZnOznOP7ufpKFvIQs_u5-koW8hC_l9XH9JzW1Sx3vcn-8ZluKvDFfheel5uGAFH-zRGuXx&_nc_ohc=q0_pYMZXwvUAX__fh9k&_nc_ht=scontent.flim13-1.fna&oh=00_AfBZPiA8_BpoaaLUdPaEv_FIdoAxwFIRI5_F1ZyLvpGq3Q&oe=65C8C895');
       "
     >
       <span
         id="blackOverlay"
-        class="w-full h-full absolute opacity-75 bg-black"
+        class="w-full h-full absolute opacity-50 bg-black"
       ></span>
     </div>
   </div>
 
-  <div class="container mx-auto px-4 -mt-24">
+  <div class="container mx-auto px-4 -mt-40">
     <div
-      class="relative flex bg-white w-full mb-8 shadow-lg rounded-sm px-4 py-5 justify-center"
+      class="relative flex bg-white w-full mb-8 shadow-lg rounded-sm px-4 py-5 justify-center h-80"
     >
       <div class="w-56 justify-center flex flex-col mx-20 text-center">
         <div
@@ -61,10 +59,6 @@
 >
   <h2 class="text-2xl flex justify-center">NUESTROS PRODUCTOS TOP</h2>
   <app-carousel [products]="products.reverse()" />
-</section>
-
-<section *ngIf="products && products.length > 0">
-  <app-cards [products]="products.slice(28, 36)"></app-cards>
 </section>
 
 <section class="dark:bg-slate-600 dark:text-white py-8">
