@@ -61,3 +61,16 @@
   color: #000;
   /*Set to match the Tailwind colour you want the active one to be */
 }
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+label {
+  cursor: pointer;
+}
+
+label.selected {
+  font-weight: bold;
+  color: #f76096;
+}

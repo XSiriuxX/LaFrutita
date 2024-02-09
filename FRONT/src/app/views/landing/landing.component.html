@@ -113,10 +113,10 @@
     <div class="flex flex-col gap-5 align-middle">
       <h3 class="text-white text-2xl font-semibold">BEBIDAS</h3>
       <p class="text-white text-xl">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Refréscate con nuestra amplia variedad de bebidas, desde café recién
+        preparado hasta deliciosos batidos de frutas y refrescos. Nuestras
+        bebidas están cuidadosamente seleccionadas para satisfacer tus gustos y
+        necesidades en cualquier momento del día.
       </p>
     </div>
   </article>
@@ -125,10 +125,10 @@
     <div class="flex flex-col gap-5 align-middle">
       <h3 class="text-white text-2xl font-semibold text-right">POSTRES</h3>
       <p class="text-white text-xl text-right">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Déjate tentar por nuestros exquisitos postres, elaborados con los
+        mejores ingredientes y preparados con maestría. Desde suaves pasteles
+        hasta cremosas tartas, nuestros postres son el broche perfecto para una
+        comida deliciosa.
       </p>
     </div>
     <img
@@ -147,10 +147,10 @@
     <div class="flex flex-col gap-5 align-middle">
       <h3 class="text-white text-2xl font-semibold">SANDWICH</h3>
       <p class="text-white text-xl">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Deléitate con nuestra selección de sándwiches preparados con
+        ingredientes frescos y pan recién horneado. Ya sea que prefieras
+        opciones clásicas o combinaciones gourmet, nuestros sándwiches son una
+        elección perfecta para una comida rápida y satisfactoria.
       </p>
     </div>
   </article>
@@ -159,10 +159,10 @@
     <div class="flex flex-col gap-5 align-middle">
       <h3 class="text-white text-2xl font-semibold text-right">ENSALADA</h3>
       <p class="text-white text-xl text-right">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Descubre la frescura y la vitalidad en cada bocado con nuestras
+        ensaladas cuidadosamente preparadas. Elige entre una variedad de
+        opciones, desde ensaladas verdes hasta ensaladas completas con
+        proteínas, y disfruta de una comida nutritiva y deliciosa.
       </p>
     </div>
     <img
@@ -210,57 +210,91 @@
   </svg>
 </section>
 
-<section class="dark:bg-slate-600 dark:text-white py-8">
-  <div class="container py-8 px-6 mx-auto">
-    <a
-      class="uppercase tracking-wide no-underline hover:no-underline font-bold text-xl"
-      href="#"
-    >
-      About
-    </a>
+<section
+  class="flex justify-center flex-col py-16 relative max-w-[1000px] mx-auto"
+>
+  <h2 class="text-3xl font-bold mb-10 mx-auto">PREGUNTAS FRECUENTES</h2>
 
-    <p class="mt-4">
-      Es un innovador e-commerce utilizando el stack MEAN (MongoDB, Express.js,
-      Angular y Node.js) combinado con tecnologías avanzadas como el sistema de
-      paquetado pnpm, un lenguaje estricto de TypeScript y CSS desarrollado con
-      Tailwind para crear una plataforma de compra en línea robusta y segura.
-      Con características de autenticación de usuarios, carrito de compras,
-      integración de MercadoPago y un panel de administración, ofrecemos una
-      experiencia de compra fluida y un control completo sobre los productos y
-      ventas.
-    </p>
-  </div>
+  <ul *ngFor="let faq of faqs; let i = index">
+    <li class="bg-white my-2 shadow-lg">
+      <h2
+        (click)="handleToggleAccordion(i)"
+        class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+      >
+        <span>
+          {{ faq.question }}
+        </span>
+        <svg
+          [ngClass]="{
+            'rotate-180': expandedIndex !== null && expandedIndex === i
+          }"
+          class="fill-current text-[#E21F71] h-6 w-6 transform transition-transform duration-500"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+          ></path>
+        </svg>
+      </h2>
+
+      <div
+        [ngStyle]="{
+          'max-height.px': expandedIndex === i ? '300' : '0',
+          
+        }"
+        class="border-l-2 border-[#E21F71] overflow-hidden duration-300 transition-all"
+      >
+        <p class="p-3 text-gray-900">{{ faq.answer }}</p>
+      </div>
+    </li>
+  </ul>
 </section>
 
-<section>
-  <div class="item px-6 py-6" x-data="{isOpen : false}">
-    <a href="#" class="flex items-center justify-between">
-      <h4 :class="{'text-green-400 font-medium' : isOpen == true}">
-        Lorem Ipsum ?
-      </h4>
-      <svg
-        :class="{'transform rotate-180' : isOpen == true}"
-        class="w-5 h-5 text-gray-500"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </a>
-    <div class="mt-3" :class="{'text-gray-600' : isOpen == true}">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
+<section class="flex justify-center px-4 max-w-[1000px] mx-auto gap-8 py-16">
+  <div class="container py-8 px-6 mx-auto flex flex-col my-auto text-xl gap-2">
+    <h2 class="text-3xl font-semibold">¿DONDE ENCONTRARNOS?</h2>
+    <p class="mt-4">Ubicanos en nuestros 3 locales en la ciudad de Ica.</p>
+    <label
+      (click)="
+        showMap(
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.5016367182119!2d-75.74074962318691!3d-14.076790632541522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e324888ea7b5%3A0xc01c08279e743fd3!2sLa%20Frutita!5e0!3m2!1ses-419!2spe!4v1707432887115!5m2!1ses-419!2spe',
+          'Puente Blanco'
+        )
+      "
+      [class.selected]="selectedMap === 'Puente Blanco'"
+    >
+      Urb. Puente Blanco, II Etapa, B-8
+    </label>
+    <label
+      (click)="
+        showMap(
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.5404896053589!2d-75.73000737620434!3d-14.067611777882643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e2963e59ef19%3A0xaf2f8bbd5bc82d53!2sLa%20Frutita!5e0!3m2!1ses-419!2spe!4v1707433621875!5m2!1ses-419!2spe',
+          'San Martin'
+        )
+      "
+      [class.selected]="selectedMap === 'San Martin'"
+    >
+      Av San Martin 461
+    </label>
+    <label
+      (click)="
+        showMap(
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.88417785023356!2d-75.73039290548786!3d-14.068504622628124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e2966f3899ab%3A0x9e0445183fc6d4cd!2sC.%20Camana%20425%2C%20Ica%2011001!5e0!3m2!1ses-419!2spe!4v1707433913681!5m2!1ses-419!2spe',
+          'Camana'
+        )
+      "
+      [class.selected]="selectedMap === 'Camana'"
+    >
+      C. Camana 425
+    </label>
   </div>
+  <iframe
+    id="mapFrame"
+    width="800"
+    height="400"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
 </section>
