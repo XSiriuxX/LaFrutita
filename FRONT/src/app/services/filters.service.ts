@@ -1,5 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { Product } from '../models/product.model';
+import { filter } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -33,15 +34,15 @@ export class FiltersService {
       return filteredProducts;
     }
 
-    // if (categories.length > 0) {
-    //   filteredProducts = filteredProducts.filter((product) =>
-    //     categories.some((category: any) =>
-    //       product.categories.includes(category)
-    //     )
-    //   );
-    // } else {
-    //   filteredProducts = [...this.copyProducts];
-    // }
+    if (categories.length > 0) {
+      filteredProducts = filteredProducts.filter((product) =>
+        categories.some((category: any) =>
+          product.CATEGORIAS.includes(category)
+        )
+      );
+    } else {
+      filteredProducts = [...this.copyProducts];
+    }
 
     if (minPrice !== 0) {
       filteredProducts = filteredProducts.filter(

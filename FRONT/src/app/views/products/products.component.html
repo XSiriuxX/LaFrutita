@@ -5,6 +5,7 @@
 
   <div class="flex">
     <app-filters
+      [categories]="categories"
       [minPrice]="minPrice"
       [maxPrice]="maxPrice"
       [selectedCategories]="selectedCategories"
@@ -13,7 +14,7 @@
       (filtersApplied)="onFiltersApplied($event)"
     ></app-filters>
 
-    <div class="flex flex-col my-20">
+    <div class="flex flex-col mt-20 mb-10">
       <div class="flex w-full px-7">
         <input
           type="text"
@@ -28,11 +29,15 @@
           Buscar
         </button>
       </div>
-      <section class="flex justify-center gap-5 flex-col">
+
+      <section class="flex justify-center gap-5 flex-col min-h-[1000px] mt-4">
         <section
-          *ngIf="products && products.length > 0; else noProductsMessage"
+          *ngIf="
+            paginatedProducts && paginatedProducts.length > 0;
+            else noProductsMessage
+          "
         >
-          <app-cards [products]="products"></app-cards>
+          <app-cards [products]="paginatedProducts"></app-cards>
         </section>
 
         <ng-template #noProductsMessage>
@@ -43,6 +48,66 @@
           </div>
         </ng-template>
       </section>
+
+      <div
+        class="inline-flex items-center justify-center rounded bg-[#E21F71] py-2 text-white w-32 mx-auto"
+      >
+        <button
+          class="inline-flex items-center justify-center"
+          (click)="previousPage()"
+          [disabled]="currentPage === 1"
+        >
+          <span class="sr-only">Prev Page</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+
+        <span class="h-4 w-px bg-white/25" aria-hidden="true"></span>
+
+        <div>
+          <label for="PaginationPage" class="sr-only">Page</label>
+
+          <input
+            type="number"
+            class="text-xl h-8 w-12 rounded border-none bg-transparent p-0 text-center font-medium [-moz-appearance:_textfield] focus:outline-none focus:ring-inset focus:ring-white [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
+            min="1"
+            value="{{ currentPage }}"
+            id="PaginationPage"
+          />
+        </div>
+
+        <span class="h-4 w-px bg-white/25"></span>
+
+        <button
+          (click)="nextPage()"
+          [disabled]="currentPage === totalPages"
+          class="inline-flex size-8 items-center justify-center rtl:rotate-180"
+        >
+          <span class="sr-only">Next Page</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </div>

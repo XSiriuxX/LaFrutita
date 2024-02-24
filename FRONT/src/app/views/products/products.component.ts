@@ -11,7 +11,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductsComponent {
   originalProducts: Product[] = [];
   products: Product[] = [];
-
+  categories: string[] = [];
   searchTerm: string = '';
 
   selectedCategories: string[] = [];
@@ -20,6 +20,9 @@ export class ProductsComponent {
   sortBy: string = '';
   ascending: boolean = false;
 
+  currentPage: number = 1;
+  itemsPerPage: number = 12;
+
   constructor(
     public productService: ProductService,
     private filtersService: FiltersService
@@ -27,6 +30,13 @@ export class ProductsComponent {
 
   ngOnInit() {
     this.getProducts();
+    this.getCategories();
+  }
+
+  getCategories() {
+    this.productService.getAllCategories().subscribe((res) => {
+      this.categories = res;
+    });
   }
 
   getProducts() {
@@ -38,6 +48,7 @@ export class ProductsComponent {
 
   searchByName() {
     this.products = this.filtersService.searchProductsByName(this.searchTerm);
+    this.applyFilters();
   }
 
   applyFilters() {
@@ -50,6 +61,8 @@ export class ProductsComponent {
       this.sortBy,
       this.ascending
     );
+
+    this.currentPage = 1;
   }
 
   onFiltersApplied(event: any) {
@@ -62,5 +75,27 @@ export class ProductsComponent {
     this.filtersService.getAllProducts(this.products);
 
     this.applyFilters();
+  }
+
+  get paginatedProducts() {
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    return this.products.slice(startIndex, endIndex);
+  }
+
+  get totalPages() {
+    return Math.ceil(this.products.length / this.itemsPerPage);
+  }
+
+  nextPage() {
+    if (this.currentPage < this.totalPages) {
+      this.currentPage++;
+    }
+  }
+
+  previousPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
   }
 }

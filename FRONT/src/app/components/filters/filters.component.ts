@@ -8,15 +8,25 @@ import { FiltersService } from 'src/app/services/filters.service';
   styleUrls: ['./filters.component.css'],
 })
 export class FiltersComponent {
-  categories: any[] = [];
+  @Input() categories: any[] = [];
   @Input() selectedCategories: string[] = [];
   @Input() minPrice: number = 0;
   @Input() maxPrice: number = 0;
   @Input() sortBy: string = '';
   @Input() ascending: boolean = false;
   @Output() filtersApplied: EventEmitter<any> = new EventEmitter();
+  currentDetail: string = '';
 
   constructor(public filtersService: FiltersService) {}
+
+  ngOnChanges() {
+    if (this.categories.length > 0 && typeof this.categories[0] === 'string') {
+      this.categories = this.categories.map((categoryName) => ({
+        categoryName,
+        selected: false,
+      }));
+    }
+  }
 
   applyFilters() {
     // Obtener solo las categorías seleccionadas
