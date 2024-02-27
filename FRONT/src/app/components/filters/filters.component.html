@@ -1,7 +1,7 @@
 <div class="m-5 sticky top-64">
   <h2 class="font-semibold text-2xl">FILTRA TUS RESULTADOS</h2>
   <section
-    class="flex gap-10 justify-center flex-col w-72 h-[600px] border bg-white mt-5 px-6 shadow-lg"
+    class="flex gap-10 justify-center flex-col w-72 h-[450px] border bg-white mt-5 px-6 shadow-lg pb-24"
   >
     <details
       (click)="currentDetail = 'precio'"
@@ -9,7 +9,7 @@
       class="group [&_summary::-webkit-details-marker]:hidden"
     >
       <summary
-        class="flex cursor-pointer items-center gap-2 border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+        class="flex cursor-pointer items-center justify-between border-gray-400 text-gray-900 transition hover:border-gray-600"
       >
         <span class="text-xl font-medium"> Precio </span>
 
@@ -68,7 +68,7 @@
       class="group [&_summary::-webkit-details-marker]:hidden"
     >
       <summary
-        class="flex cursor-pointer items-center gap-2 border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+        class="flex cursor-pointer items-center justify-between border-gray-400 text-gray-900 transition hover:border-gray-600"
       >
         <span class="text-xl font-medium"> Ordenar</span>
 
@@ -122,7 +122,7 @@
       class="group [&_summary::-webkit-details-marker]:hidden"
     >
       <summary
-        class="flex cursor-pointer items-center justify-between border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
+        class="flex cursor-pointer items-center justify-between border-gray-400 text-gray-900 transition hover:border-gray-600"
       >
         <span class="text-xl font-medium">Categorias</span>
 
@@ -170,7 +170,7 @@
     </details>
 
     <summary
-      class="flex items-center border-t border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600 justify-center pt-5"
+      class="absolute bottom-5 flex items-center border-t border-gray-400 pb-1 pt-5 w-60 justify-center"
     >
       <span
         class="text-xl text-[#E21F71] font-medium cursor-pointer"

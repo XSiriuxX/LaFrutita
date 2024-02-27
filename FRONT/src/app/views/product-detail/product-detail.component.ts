@@ -12,8 +12,10 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductDetailComponent {
   product: Product | null = null;
   productID: string | null = null;
+  products: Product[] = [];
   userId: string = '';
   updatedProduct: any = {};
+  cantidad: number = 1;
   @ViewChild('quantitySelect') quantitySelect!: ElementRef | undefined;
 
   constructor(
@@ -21,6 +23,12 @@ export class ProductDetailComponent {
     private route: ActivatedRoute,
     private cartService: CartService
   ) {}
+
+  getProducts(CATEGORIA: String | undefined) {
+    this.productService.getAllProducts().subscribe((res: Product[]) => {
+      this.products = res.filter((product) => product.CATEGORIAS === CATEGORIA);
+    });
+  }
 
   ngOnInit() {
     this.userId = localStorage.getItem('ID') || '';
@@ -36,6 +44,7 @@ export class ProductDetailComponent {
         .getProductDetail(this.productID)
         .subscribe((res: Product) => {
           this.product = res;
+          this.getProducts(this.product?.CATEGORIAS);
         });
     }
   }
@@ -44,11 +53,23 @@ export class ProductDetailComponent {
     this.updatedProduct = {
       userId: this.userId,
       productId: id,
-      quantity: +this.quantitySelect?.nativeElement.value,
+      quantity: this.cantidad,
     };
 
     this.cartService.addProduct(this.updatedProduct).subscribe((res) => {
       console.log(res);
     });
+  }
+
+  aumentarCantidad() {
+    if (this.cantidad < 10) {
+      this.cantidad++;
+    }
+  }
+
+  disminuirCantidad() {
+    if (this.cantidad > 1) {
+      this.cantidad--;
+    }
   }
 }
