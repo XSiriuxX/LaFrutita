@@ -24,25 +24,25 @@ export class CartpopupComponent {
     private route: ActivatedRoute
   ) {}
 
-  ngOnInit() {
-    this.userId = localStorage.getItem('ID') || '';
-    this.getProductsCart();
-  }
+  // ngOnInit() {
+  //   this.userId = localStorage.getItem('ID') || '';
+  //   this.getProductsCart();
+  // }
 
-  getProductsCart() {
-    this.cartService.getProductsCart(this.userId).subscribe((res: any) => {
-      this.cart = res;
-    });
-  }
+  // getProductsCart() {
+  //   this.cartService.getProductsCart(this.userId).subscribe((res: any) => {
+  //     this.cart = res;
+  //   });
+  // }
 
-  deleteProduct(id: string | undefined) {
-    this.deletedProduct = {
-      userId: this.userId,
-      productId: id,
-    };
+  // deleteProduct(id: string | undefined) {
+  //   this.deletedProduct = {
+  //     userId: this.userId,
+  //     productId: id,
+  //   };
 
-    this.cartService
-      .deleteProduct(this.deletedProduct)
-      .subscribe((res) => this.getProductsCart());
-  }
+  //   this.cartService
+  //     .deleteProduct(this.deletedProduct)
+  //     .subscribe((res) => this.getProductsCart());
+  // }
 }

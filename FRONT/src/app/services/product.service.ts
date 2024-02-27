@@ -18,7 +18,7 @@ export class ProductService {
     );
   }
 
-  getProductDetail(id: string): Observable<Product> {
+  getProductDetail(id: string): Observable<any> {
     return this.http.get<Product>(`${this.API_URL}/${id}`).pipe(
       tap((res) => {
         return res;

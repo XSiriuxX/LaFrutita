@@ -6,37 +6,26 @@ import { Product } from '../models/product.model';
 
 @Injectable()
 export class CartService {
-  API_URL: string = `${environment.API_URL}/user/cart`;
+  API_URL: string = `${environment.API_URL}/cart`;
   constructor(private http: HttpClient) {}
 
-  getProductsCart(id: string): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.API_URL}/${id}`).pipe(
-      tap((res) => {
-        return res;
-      })
-    );
+  generateTempToken(): Observable<any> {
+    return this.http.post<any>(`${this.API_URL}/createtoken`, {});
   }
 
-  addProduct(newproduct: any): Observable<any> {
-    return this.http.post<any>(`${this.API_URL}`, newproduct).pipe(
-      tap((res) => {
-        return res;
-      })
-    );
+  getCart(token: string): Observable<any> {
+    return this.http.post<any>(`${this.API_URL}`, { token });
   }
 
-  deleteProduct(deletedproduct: any): Observable<any> {
-    const options = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-      }),
-      body: deletedproduct,
-    };
-
-    return this.http.request<any>('delete', `${this.API_URL}`, options).pipe(
-      tap((res) => {
-        return res;
-      })
-    );
+  addToCart(
+    token: string,
+    productId: string | undefined,
+    quantity: number
+  ): Observable<any> {
+    return this.http.post<any>(`${this.API_URL}/addproduct`, {
+      token,
+      productId,
+      quantity,
+    });
   }
 }

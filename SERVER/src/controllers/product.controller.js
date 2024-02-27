@@ -37,7 +37,21 @@ product.getProduct = async (req, res) => {
       res.status(404).json({ message: "El ID no fue encontrado" });
     }
 
-    res.status(201).json(product);
+    const response = {
+      _id: product._id,
+      NOMBRE: product.NOMBRE,
+      DESCRIPCION: product.DESCRIPCION,
+      TIPO: product.TIPO,
+      DISPONIBILIDAD: product.DISPONIBILIDAD,
+      IMAGEN:
+        product.IMAGEN.trim() !== ""
+          ? product.IMAGEN
+          : "https://www.yiwubazaar.com/resources/assets/images/default-product.jpg",
+      PRECIO: product.PRECIO,
+      CATEGORIAS: product.CATEGORIAS,
+    };
+
+    res.status(201).json(response);
   } catch (error) {
     res.status(500).json({ message: "Error interno del servidor" });
   }

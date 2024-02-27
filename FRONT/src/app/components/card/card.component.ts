@@ -19,16 +19,4 @@ export class CardComponent {
   ngOnInit() {
     this.userId = localStorage.getItem('ID') || '';
   }
-
-  addNewProduct(id: string | undefined) {
-    this.newProduct = {
-      userId: this.userId,
-      productId: id,
-      quantity: 1,
-    };
-
-    this.cartService
-      .addProduct(this.newProduct)
-      .subscribe((res) => this.cartService.getProductsCart(this.userId));
-  }
 }

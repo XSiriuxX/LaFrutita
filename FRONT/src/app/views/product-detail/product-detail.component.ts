@@ -50,15 +50,22 @@ export class ProductDetailComponent {
   }
 
   addNewProduct(id: string | undefined) {
-    this.updatedProduct = {
-      userId: this.userId,
-      productId: id,
-      quantity: this.cantidad,
-    };
+    const token = localStorage.getItem('Token');
 
-    this.cartService.addProduct(this.updatedProduct).subscribe((res) => {
-      console.log(res);
-    });
+    if (!token) {
+      console.error('No se encontró el token del carrito');
+      return;
+    }
+
+    this.cartService.addToCart(token, id, this.cantidad).subscribe(
+      (res) => {
+        console.log('Producto agregado al carrito:', res);
+        localStorage.setItem('Token', res.token);
+      },
+      (error) => {
+        console.error('Error al agregar producto al carrito:', error);
+      }
+    );
   }
 
   aumentarCantidad() {

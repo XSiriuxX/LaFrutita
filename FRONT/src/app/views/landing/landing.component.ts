@@ -1,4 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/models/product.model';
 
@@ -43,13 +44,17 @@ export class LandingComponent {
   expandedIndex: number | null = null;
   mapFrame: any;
 
-  constructor(public productService: ProductService) {}
+  constructor(
+    public productService: ProductService,
+    private cartService: CartService
+  ) {}
 
   ngOnInit() {
     this.getProducts();
     this.mapFrame = document.getElementById('mapFrame');
     this.mapFrame.src =
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.5016367182119!2d-75.74074962318691!3d-14.076790632541522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e324888ea7b5%3A0xc01c08279e743fd3!2sLa%20Frutita!5e0!3m2!1ses-419!2spe!4v1707432887115!5m2!1ses-419!2spe';
+    this.generateToken();
   }
 
   getProducts() {
@@ -69,5 +74,17 @@ export class LandingComponent {
       this.mapFrame.src = url;
     }
     this.selectedMap = mapName;
+  }
+
+  generateToken() {
+    this.cartService.generateTempToken().subscribe(
+      (res: any) => {
+        const token = res.token;
+        localStorage.setItem('Token', token);
+      },
+      (error: any) => {
+        console.error('Error al generar el token temporal:', error);
+      }
+    );
   }
 }
