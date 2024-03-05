@@ -1,0 +1,6 @@
+.carrito {
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 40px;
+  scrollbar-width: thin;
+}

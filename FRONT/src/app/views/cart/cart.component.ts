@@ -1,6 +1,4 @@
 import { Component, SimpleChanges } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -12,6 +10,8 @@ import { ProductService } from 'src/app/services/product.service';
 export class CartComponent {
   cart: {
     IMAGEN: string;
+    CATEGORIAS: string;
+    TIPO: string;
     NOMBRE: string;
     PRECIO: Number;
     DESCRIPCION: string;
@@ -19,11 +19,10 @@ export class CartComponent {
   }[] = [];
   userId: string = '';
   updatedProduct: any = {};
-
   subtotal: number = 0;
   total: number = 0;
   envioSeleccionado: boolean = true;
-  envio: number = 4.99;
+  envio: number = 4.9;
 
   constructor(
     private cartService: CartService,
@@ -33,6 +32,9 @@ export class CartComponent {
   ngOnInit() {
     this.userId = localStorage.getItem('Token') || '';
     this.getCart();
+    setTimeout(() => {
+      this.calculateSubtotal();
+    }, 400);
   }
 
   getCart(): void {
@@ -57,26 +59,38 @@ export class CartComponent {
         console.error('Error al obtener el carrito:', error);
       }
     );
-    console.log(this.cart);
   }
 
-  // toggleenvio() {
-  //   this.envioSeleccionado = !this.envioSeleccionado;
+  aumentarCantidad() {
+    // if (this.cantidad < 10) {
+    //   this.cantidad++;
+    // }
+  }
 
-  //   if (this.envioSeleccionado) {
-  //     this.envio = 4.99;
-  //   } else {
-  //     this.envio = 0;
-  //   }
-  //   this.calculateSubtotal();
-  // }
+  disminuirCantidad() {
+    // if (this.cantidad > 1) {
+    //   this.cantidad--;
+    // }
+  }
 
-  // calculateSubtotal() {
-  //   this.subtotal = this.cart.reduce((acc, product) => {
-  //     return acc + product.quantity * product.productPrice;
-  //   }, 0);
-  //   this.total = this.subtotal + this.envio;
-  // }
+  toggleenvio() {
+    this.envioSeleccionado = !this.envioSeleccionado;
+
+    if (this.envioSeleccionado) {
+      this.envio = 5.9;
+    } else {
+      this.envio = 0;
+    }
+    this.calculateSubtotal();
+  }
+
+  calculateSubtotal() {
+    this.subtotal = this.cart.reduce((acc: number, product) => {
+      return acc + +product.CANTIDAD * +product.PRECIO;
+    }, 0);
+
+    this.total = this.subtotal + this.envio;
+  }
 
   // deleteProduct(id: string | undefined) {
   //   this.updatedProduct = {

@@ -1,0 +1,95 @@
+<div class="justify-center max-w-[1600px] mx-auto relative">
+  <a
+    class="absolute top-12 left-5 text-[#E21F71] font-bold text-lg cursor-pointer"
+    onclick="window.history.back();"
+  >
+    < Retroceder
+  </a>
+  <section class="flex pt-32 gap-24 max-w-[1400px] mx-auto">
+    <div class="flex flex-col gap-8 w-3/5 text-xl my-auto mr-10">
+      <p class="text-3xl font-semibold">Contacta con nosotros</p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <p>
+        Email: Lafrutita@gmail.com <br />
+        Telefono: +51 987 654 321 +51 987 654 321 <br />
+      </p>
+    </div>
+
+    <div class="flex w-2/5 flex-col gap-6 text-xl">
+      <input
+        type="text"
+        class="border border-gray-300 px-4 py-2 focus:outline-none focus:border-[#E21F71]"
+        placeholder="Nombre y Apellido"
+      />
+      <input
+        type="text"
+        class="border border-gray-300 px-4 py-2 focus:outline-none focus:border-[#E21F71]"
+        placeholder="Correo Electronico"
+      />
+      <textarea
+        type="text"
+        class="border border-gray-300 px-4 py-2 focus:outline-none focus:border-[#E21F71]"
+        placeholder="Mensaje"
+      ></textarea>
+      <button
+        class="p-3 text-xl font-semibold text-white rounded-md bg-[#E21F71] hover:bg-[#F76096]"
+      >
+        Confirmar la compra
+      </button>
+    </div>
+  </section>
+
+  <section class="flex justify-center max-w-[1400px] mx-auto gap-8 py-16 mt-10">
+    <div class="container py-8 mx-auto flex flex-col my-auto text-xl gap-2">
+      <h2 class="text-3xl font-semibold">¿DONDE ENCONTRARNOS?</h2>
+      <p class="mt-4">Ubicanos en nuestros 3 locales en la ciudad de Ica.</p>
+      <label
+        (click)="
+          showMap(
+            'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.5016367182119!2d-75.74074962318691!3d-14.076790632541522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e324888ea7b5%3A0xc01c08279e743fd3!2sLa%20Frutita!5e0!3m2!1ses-419!2spe!4v1707432887115!5m2!1ses-419!2spe',
+            'Puente Blanco'
+          )
+        "
+        [class.selected]="selectedMap === 'Puente Blanco'"
+      >
+        Urb. Puente Blanco, II Etapa, B-8
+      </label>
+      <label
+        (click)="
+          showMap(
+            'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.5404896053589!2d-75.73000737620434!3d-14.067611777882643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e2963e59ef19%3A0xaf2f8bbd5bc82d53!2sLa%20Frutita!5e0!3m2!1ses-419!2spe!4v1707433621875!5m2!1ses-419!2spe',
+            'San Martin'
+          )
+        "
+        [class.selected]="selectedMap === 'San Martin'"
+      >
+        Av San Martin 461
+      </label>
+      <label
+        (click)="
+          showMap(
+            'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.88417785023356!2d-75.73039290548786!3d-14.068504622628124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e2966f3899ab%3A0x9e0445183fc6d4cd!2sC.%20Camana%20425%2C%20Ica%2011001!5e0!3m2!1ses-419!2spe!4v1707433913681!5m2!1ses-419!2spe',
+            'Camana'
+          )
+        "
+        [class.selected]="selectedMap === 'Camana'"
+      >
+        C. Camana 425
+      </label>
+    </div>
+    <iframe
+      id="mapFrame"
+      width="800"
+      height="400"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </section>
+</div>

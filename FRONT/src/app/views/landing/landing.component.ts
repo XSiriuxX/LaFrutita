@@ -77,14 +77,18 @@ export class LandingComponent {
   }
 
   generateToken() {
-    this.cartService.generateTempToken().subscribe(
-      (res: any) => {
-        const token = res.token;
-        localStorage.setItem('Token', token);
-      },
-      (error: any) => {
-        console.error('Error al generar el token temporal:', error);
-      }
-    );
+    const existingToken = localStorage.getItem('Token');
+
+    if (!existingToken) {
+      this.cartService.generateTempToken().subscribe(
+        (res: any) => {
+          const token = res.token;
+          localStorage.setItem('Token', token);
+        },
+        (error: any) => {
+          console.error('Error al generar el token temporal:', error);
+        }
+      );
+    }
   }
 }

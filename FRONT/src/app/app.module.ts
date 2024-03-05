@@ -20,9 +20,8 @@ import { CartComponent } from './views/cart/cart.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CartService } from './services/cart.service';
 import { FiltersComponent } from './components/filters/filters.component';
-
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { getAuth, provideAuth } from '@angular/fire/auth';
+import { ContactComponent } from './views/contact/contact.component';
+import { TeamComponent } from './views/team/team.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +37,8 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
     CartComponent,
     CarouselComponent,
     FiltersComponent,
+    ContactComponent,
+    TeamComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ProductService, DarkModeService, CartService],

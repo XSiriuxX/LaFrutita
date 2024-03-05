@@ -1,15 +1,11 @@
 <div class="m-5 sticky top-64">
   <h2 class="font-semibold text-2xl">FILTRA TUS RESULTADOS</h2>
   <section
-    class="flex gap-10 justify-center flex-col w-72 h-[450px] border bg-white mt-5 px-6 shadow-lg pb-24"
+    class="flex gap-8 justify-center flex-col w-72 h-full border bg-white mt-5 px-6 shadow-lg pb-28 pt-8"
   >
-    <details
-      (click)="currentDetail = 'precio'"
-      [open]="currentDetail === 'precio'"
-      class="group [&_summary::-webkit-details-marker]:hidden"
-    >
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
       <summary
-        class="flex cursor-pointer items-center justify-between border-gray-400 text-gray-900 transition hover:border-gray-600"
+        class="flex cursor-pointer items-center justify-between text-gray-900 transition"
       >
         <span class="text-xl font-medium"> Precio </span>
 
@@ -31,44 +27,38 @@
         </span>
       </summary>
 
-      <div class="group-open:mt-2 w-60 max-h-40 overflow-y-auto">
-        <div class="border-gray-200 p-4 flex justify-between gap-4">
-          <label for="FilterPriceFrom" class="flex items-center gap-2">
-            <span class="text-sm text-gray-600">$</span>
+      <div class="pt-4 px-4 flex justify-between gap-4 text-xl">
+        <label for="FilterPriceFrom" class="flex items-center gap-2">
+          <span>$</span>
 
-            <input
-              type="number"
-              id="FilterPriceFrom"
-              placeholder="Desde"
-              class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
-              [(ngModel)]="minPrice"
-              (ngModelChange)="applyFilters()"
-            />
-          </label>
-          -
-          <label for="FilterPriceTo" class="flex items-center gap-2">
-            <span class="text-sm text-gray-600">$</span>
+          <input
+            type="number"
+            id="FilterPriceFrom"
+            placeholder="Desde"
+            class="w-full shadow-sm"
+            [(ngModel)]="minPrice"
+            (ngModelChange)="applyFilters()"
+          />
+        </label>
+        -
+        <label for="FilterPriceTo" class="flex items-center gap-2">
+          <span>$</span>
 
-            <input
-              type="number"
-              id="FilterPriceTo"
-              placeholder="Hasta"
-              class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
-              [(ngModel)]="maxPrice"
-              (ngModelChange)="applyFilters()"
-            />
-          </label>
-        </div>
+          <input
+            type="number"
+            id="FilterPriceTo"
+            placeholder="Hasta"
+            class="w-full rounded-md shadow-sm"
+            [(ngModel)]="maxPrice"
+            (ngModelChange)="applyFilters()"
+          />
+        </label>
       </div>
     </details>
 
-    <details
-      (click)="currentDetail = 'ordenar'"
-      [open]="currentDetail === 'ordenar'"
-      class="group [&_summary::-webkit-details-marker]:hidden"
-    >
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
       <summary
-        class="flex cursor-pointer items-center justify-between border-gray-400 text-gray-900 transition hover:border-gray-600"
+        class="flex cursor-pointer items-center justify-between text-gray-900 transition"
       >
         <span class="text-xl font-medium"> Ordenar</span>
 
@@ -90,39 +80,29 @@
         </span>
       </summary>
 
-      <div class="roup-open:mt-2 w-60 max-h-40 overflow-y-auto">
-        <ul class="space-y-1 border-gray-200 p-4">
-          <li (click)="setSorting('name', true)">
-            <label class="inline-flex items-center gap-2 cursor-pointer">
-              A - Z
-            </label>
-          </li>
-          <li (click)="setSorting('name', false)">
-            <label class="inline-flex items-center gap-2 cursor-pointer">
-              Z - A
-            </label>
-          </li>
-          <li (click)="setSorting('price', true)">
-            <label class="inline-flex items-center gap-2 cursor-pointer">
-              Menor precio
-            </label>
-          </li>
-          <li (click)="setSorting('price', false)">
-            <label class="inline-flex items-center gap-2 cursor-pointer">
-              Mayor precio
-            </label>
-          </li>
-        </ul>
-      </div>
+      <ul class="border-gray-200 pt-2 px-4 text-xl gap-2 flex flex-col">
+        <li (click)="setSorting('name', true)">
+          <label class="inline-flex items-center cursor-pointer"> A - Z </label>
+        </li>
+        <li (click)="setSorting('name', false)">
+          <label class="inline-flex items-center cursor-pointer"> Z - A </label>
+        </li>
+        <li (click)="setSorting('price', true)">
+          <label class="inline-flex items-center cursor-pointer">
+            Menor precio
+          </label>
+        </li>
+        <li (click)="setSorting('price', false)">
+          <label class="inline-flex items-center cursor-pointer">
+            Mayor precio
+          </label>
+        </li>
+      </ul>
     </details>
 
-    <details
-      [open]="currentDetail === 'categories'"
-      (click)="currentDetail = 'categories'"
-      class="group [&_summary::-webkit-details-marker]:hidden"
-    >
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
       <summary
-        class="flex cursor-pointer items-center justify-between border-gray-400 text-gray-900 transition hover:border-gray-600"
+        class="flex cursor-pointer items-center justify-between text-gray-900 transition"
       >
         <span class="text-xl font-medium">Categorias</span>
 
@@ -144,8 +124,8 @@
         </span>
       </summary>
 
-      <div class="group-open:mt-2 w-60 max-h-40 overflow-y-auto">
-        <ul class="space-y-1 border-gray-200 p-4">
+      <div class="categorias">
+        <ul class="p-4 gap-2 flex flex-col">
           <li *ngFor="let category of categories">
             <label
               for="{{ category.categoryName }}"
@@ -160,7 +140,7 @@
                 (change)="applyFilters()"
               />
 
-              <span class="text-sm font-medium text-gray-700">
+              <span>
                 {{ category.categoryName }}
               </span>
             </label>
