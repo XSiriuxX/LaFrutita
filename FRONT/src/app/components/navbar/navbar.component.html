@@ -1,10 +1,7 @@
-<nav
-  id="header"
-  class="w-full z-30 dark:fill-white stroke-black dark:stroke-white dark:bg-slate-900"
->
+<nav id="header" class="w-full z-30">
   <div
     style="max-width: 1600px"
-    class="w-full mx-auto flex justify-between px-10 py-4 text-[#E21F71] font-semibold text-2xl"
+    class="w-full mx-auto flex justify-between px-10 py-4 text-[#FC0382] font-semibold text-2xl"
   >
     <label for="menu-toggle" class="cursor-pointer md:hidden block mr-20">
       <svg
@@ -24,32 +21,25 @@
 
     <input class="hidden" type="checkbox" id="menu-toggle" />
 
-    <div class="hidden md:flex md:w-auto md:order-1" id="menu">
-      <ul class="md:flex items-center">
-        <li>
-          <a class="inline-block hover:underline mx-5" href="/">Inicio</a>
+    <div
+      class="hidden w-full md:flex md:w-auto md:order-3 justify-between border-solid border-red-600 border-4"
+      id="nav-content"
+    >
+      <a href="/">
+        <img src="assets/LogoFrutitaGrande.svg" alt="Logo" class="w-48" />
+      </a>
+      <ul class="md:flex items-center gap-5 font-semibold">
+        <li *ngFor="let item of NavbarList">
+          <a class="inline-block hover:underline" [href]="item.ref">{{
+            item.title
+          }}</a>
         </li>
         <li>
-          <a class="inline-block hover:underline mx-5" href="/products"
-            >Productos</a
+          <a
+            class="border-2 border-[#FC0382] bg-[#FC0382] px-4 py-2 rounded-2xl text-white transition-colors duration-300"
+            href="/menu"
+            >CARTA</a
           >
-        </li>
-      </ul>
-    </div>
-
-    <div class="order-1 md:order-2 text-4xl font-bold">
-      <a routerLink="/">La Frutita</a>
-    </div>
-
-    <div class="hidden md:flex md:w-auto md:order-3" id="nav-content">
-      <ul class="md:flex items-center">
-        <li>
-          <a class="inline-block hover:underline mx-5" href="/contact"
-            >Contacto</a
-          >
-        </li>
-        <li>
-          <a class="inline-block hover:underline mx-5" href="/cart">Carrito</a>
         </li>
       </ul>
     </div>

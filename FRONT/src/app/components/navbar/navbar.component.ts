@@ -12,6 +12,14 @@ export class NavbarComponent {
   showUser: boolean = false;
   isLoggedIn: boolean = false;
 
+  NavbarList = [
+    { id: 1, title: 'PRODUCTOS', ref: '/products' },
+    { id: 2, title: 'CONTACTO', ref: '/contact' },
+    { id: 3, title: 'NOSOTROS', ref: '/about' },
+    { id: 4, title: 'EQUIPO', ref: '/team' },
+    { id: 5, title: 'CARRITO', ref: '/cart' },
+  ];
+
   constructor(public darkModeService: DarkModeService) {}
 
   toggleUser() {
