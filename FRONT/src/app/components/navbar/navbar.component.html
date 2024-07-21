@@ -1,47 +1,52 @@
-<nav id="header" class="w-full z-30">
-  <div
-    style="max-width: 1600px"
-    class="w-full mx-auto flex justify-between px-10 py-4 text-[#FC0382] font-semibold text-2xl"
-  >
-    <label for="menu-toggle" class="cursor-pointer md:hidden block mr-20">
-      <svg
-        class="w-6 mx-1 cursor-pointer"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 6H20M4 12H20M4 18H20"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
+<nav
+  id="header"
+  class="w-full z-30 sticky top-0 bg-white items-center p-6 text-[#FC0382] font-semibold xl:text-2xl text-xl duration-300"
+>
+  <div class="w-full mx-auto flex justify-between">
+    <a href="/" class="flex items-center">
+      <img src="assets/LogoFrutitaGrande.svg" alt="Logo" class="w-52" />
+    </a>
+
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+      <img src="assets/menu.svg" />
     </label>
 
-    <input class="hidden" type="checkbox" id="menu-toggle" />
+    <input class="hidden" type="checkbox" id="menu-toggle" #menuToggle />
 
-    <div
-      class="hidden w-full md:flex md:w-auto md:order-3 justify-between border-solid border-red-600 border-4"
-      id="nav-content"
-    >
-      <a href="/">
-        <img src="assets/LogoFrutitaGrande.svg" alt="Logo" class="w-48" />
-      </a>
-      <ul class="md:flex items-center gap-5 font-semibold">
+    <div class="hidden lg:flex justify-between" id="nav-content">
+      <ul class="md:flex items-center gap-8 font-semibold">
         <li *ngFor="let item of NavbarList">
-          <a class="inline-block hover:underline" [href]="item.ref">{{
+          <a class="inline-block hover:font-bold" [href]="item.ref">{{
             item.title
           }}</a>
         </li>
-        <li>
-          <a
-            class="border-2 border-[#FC0382] bg-[#FC0382] px-4 py-2 rounded-2xl text-white transition-colors duration-300"
-            href="/menu"
-            >CARTA</a
-          >
+        <li
+          class="bg-[#FC0382] px-4 py-2 rounded-2xl text-white duration-300 transform hover:scale-110"
+        >
+          <a href="/menu">CARTA</a>
         </li>
       </ul>
     </div>
+  </div>
+
+  <div
+    class="lg:hidden w-60 absolute right-0 top-20 text-xl bg-white rounded-2xl duration-300"
+  >
+    <ul
+      id="mobile-menu"
+      class="hidden items-center gap-2 justify-center flex flex-col p-6"
+      #mobileMenu
+    >
+      <li *ngFor="let item of NavbarList">
+        <a class="block p-4 hover:font-bold" [href]="item.ref">{{
+          item.title
+        }}</a>
+      </li>
+      <li
+        class="bg-[#FC0382] px-4 py-2 rounded-2xl text-white duration-300 transform hover:scale-110 justify-center"
+      >
+        <a href="/menu">CARTA</a>
+      </li>
+    </ul>
   </div>
 </nav>

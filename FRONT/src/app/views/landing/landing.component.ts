@@ -41,6 +41,19 @@ export class LandingComponent {
         'Puedes ponerte en contacto con nuestro equipo de atención al cliente de varias maneras. Puedes enviarnos un correo electrónico a support@example.com, llamarnos al número +123456789, o utilizar nuestro chat en vivo disponible en nuestro sitio web durante horas hábiles.',
     },
   ];
+  list1 = [
+    { img: 'assets/contact.svg', name: 'CONTACTO' },
+    { img: 'assets/team.svg', name: 'NOSOTROS' },
+    { img: 'assets/door.svg', name: 'ÚNETENOS' },
+    { img: 'assets/menu.svg', name: 'CARTA' },
+  ];
+  list2 = [
+    { id: 1, ref: '/', img: 'assets/instagram.svg' },
+    { id: 2, ref: '/', img: 'assets/facebook.svg' },
+    { id: 3, ref: '/', img: 'assets/mail.svg' },
+    { id: 4, ref: '/', img: 'assets/whatsapp.svg' },
+    { id: 5, ref: '/', img: 'assets/tiktok.svg' },
+  ];
   expandedIndex: number | null = null;
   mapFrame: any;
 
