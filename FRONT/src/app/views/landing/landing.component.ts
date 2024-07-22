@@ -54,6 +54,38 @@ export class LandingComponent {
     { id: 4, ref: '/', img: 'assets/whatsapp.svg' },
     { id: 5, ref: '/', img: 'assets/tiktok.svg' },
   ];
+  list3 = [
+    {
+      title: 'Desayunos Personalizados',
+      description:
+        'Sorprende a tus seres queridos con nuestras cajas de desayunos personalizados, una combinación perfecta de jugos, sandwiches y ensaladas, presentados de manera elegante y listos para regalar.',
+      img: 'https://i.postimg.cc/bvvmTh1C/344899040-177089584917446-6131914366910401036-n.jpg',
+    },
+    {
+      title: 'Bebidas',
+      description:
+        'Refresca tu día con nuestra amplia selección de bebidas naturales y saludables. Desde jugos recién exprimidos hasta smoothies energéticos, cada sorbo es una explosión de sabor y nutrientes.',
+      img: 'https://i.postimg.cc/Hk9NzzRx/306508629-2382822951873776-401753665762113685-n.jpg',
+    },
+    {
+      title: 'Sandwiches',
+      description:
+        'Disfruta de nuestros sandwiches artesanales, preparados con ingredientes frescos y de calidad. Perfectos para un almuerzo rápido y delicioso, llenos de sabores únicos que te encantarán.',
+      img: 'https://i.postimg.cc/2jggSVnz/302221007-2374082376081167-4840584945127132772-n.jpg',
+    },
+    {
+      title: 'Ensaladas',
+      description:
+        'Nuestras ensaladas son una combinación perfecta de frescura y sabor. Creadas con verduras frescas y aderezos caseros, son una opción saludable y deliciosa para cualquier momento del día.',
+      img: 'https://i.postimg.cc/X73cLWbf/Captura-de-pantalla-2024-02-23-205518.jpg',
+    },
+    {
+      title: 'Postres',
+      description:
+        'Termina tu comida con un toque dulce de nuestros postres caseros. Desde opciones ligeras y saludables hasta indulgencias más ricas, tenemos algo para satisfacer todos los antojos.',
+      img: 'https://i.postimg.cc/Dyd53Zgp/370147745-715160617313784-7755510322294888191-n.jpg',
+    },
+  ];
   expandedIndex: number | null = null;
   mapFrame: any;
 
