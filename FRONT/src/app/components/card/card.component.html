@@ -1,21 +1,23 @@
 <div
-  class="w-72 h-96 p-6 flex flex-col justify-center cursor-pointer"
+  class="flex flex-col cursor-pointer bg-[#FF80C1] rounded-2xl max-w-[500px]"
   [routerLink]="'/product/' + product?._id"
 >
-  <img class="rounded-md w-48 h-48 mx-auto" [src]="product?.IMAGEN" />
+  <div
+    class="w-full aspect-square overflow-hidden flex justify-center items-center rounded-2xl"
+  >
+    <img class="rounded-2xl" [src]="product?.IMAGEN" />
+  </div>
 
   <div
-    class="w-28 h-28 mb-2 shadow-lg rounded-full bg-[#F76096] mx-auto -mt-14 flex"
+    class="w-3/5 h-12 mb-2 shadow-lg rounded-xl bg-[#FC0382] mx-auto -mt-6 flex"
   >
-    <p
-      class="flex justify-center mx-auto my-auto text-white text-2xl font-semibold"
-    >
+    <p class="flex m-auto text-white text-2xl font-semibold">
       S/. {{ product?.PRECIO }}
     </p>
   </div>
 
-  <div class="flex items-center justify-between mt-4">
-    <p class="font-semibold mx-auto text-2xl text-center">
+  <div class="flex items-center mb-4">
+    <p class="font-bold mx-auto text-xl text-center">
       {{ product?.NOMBRE }}
     </p>
   </div>

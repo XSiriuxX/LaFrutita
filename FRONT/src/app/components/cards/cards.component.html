@@ -1,11 +1,7 @@
-<section class="py-8 dark:text-white dark:bg-slate-600">
-  <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full"
-    >
-      <section *ngFor="let product of products" class="mx-auto my-2 md:mx-2">
-        <app-card [product]="product"></app-card>
-      </section>
-    </div>
+<section
+  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+>
+  <div *ngFor="let product of products">
+    <app-card [product]="product"></app-card>
   </div>
 </section>

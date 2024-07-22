@@ -1,6 +1,6 @@
 <div class="justify-center max-w-[1600px] mx-auto relative">
   <a
-    class="absolute top-12 left-5 text-[#E21F71] font-bold text-lg cursor-pointer"
+    class="absolute top-12 left-5 text-[#FC0382] font-bold text-lg cursor-pointer"
     onclick="window.history.back();"
   >
     < Retroceder
@@ -8,6 +8,7 @@
 
   <div class="flex">
     <app-filters
+      class="hidden sm:block"
       [categories]="categories"
       [minPrice]="minPrice"
       [maxPrice]="maxPrice"
@@ -17,23 +18,27 @@
       (filtersApplied)="onFiltersApplied($event)"
     ></app-filters>
 
-    <div class="flex flex-col mt-20 mb-10">
-      <div class="flex w-full px-7">
+    <div class="flex flex-col mt-20 mb-10 gap-10 mx-auto">
+      <section
+        class="flex flex-col sm:flex-row w-full justify-around border border-red-600 sm:gap-10 gap-4"
+      >
         <input
           type="text"
-          class="w-3/4 h-12 border border-gray-400 pl-4 shadow-lg text-xl"
+          class="sm:w-4/6 h-12 pl-4 rounded-2xl shadow-lg text-xl"
           placeholder="Buscar producto"
           [(ngModel)]="searchTerm"
           (ngModelChange)="searchByName()"
         />
         <button
-          class="ml-3 w-1/4 h-12 px-2 text-white hover:bg-black shadow-lg text-xl font-bold bg-[#E21F71]"
+          class="sm:w-1/6 h-12 px-2 text-white hover:scale-105 shadow-lg text-2xl font-bold bg-[#FC0382] rounded-2xl min-w-[100px]"
         >
           Buscar
         </button>
-      </div>
+      </section>
 
-      <section class="flex justify-center gap-5 flex-col min-h-[1000px] mt-4">
+      <section
+        class="flex justify-center flex-col min-h-[1000px] p-6 border border-red-500"
+      >
         <section
           *ngIf="
             paginatedProducts && paginatedProducts.length > 0;
@@ -52,8 +57,8 @@
         </ng-template>
       </section>
 
-      <div
-        class="inline-flex items-center justify-center rounded bg-[#E21F71] py-2 text-white w-32 mx-auto"
+      <section
+        class="inline-flex items-center justify-center rounded-2xl bg-[#FC0382] py-2 text-white w-32 mx-auto"
       >
         <button
           class="inline-flex items-center justify-center"
@@ -110,7 +115,7 @@
             />
           </svg>
         </button>
-      </div>
+      </section>
     </div>
   </div>
 </div>
