@@ -1,4 +1,4 @@
-<div class="justify-center max-w-[1600px] mx-auto relative">
+<div class="justify-center max-w-[2000px] mx-auto relative">
   <a
     class="absolute top-12 left-5 text-[#FC0382] font-bold text-lg cursor-pointer"
     onclick="window.history.back();"
@@ -7,20 +7,22 @@
   </a>
 
   <div class="flex">
-    <app-filters
-      class="hidden sm:block"
-      [categories]="categories"
-      [minPrice]="minPrice"
-      [maxPrice]="maxPrice"
-      [selectedCategories]="selectedCategories"
-      [sortBy]="sortBy"
-      [ascending]="ascending"
-      (filtersApplied)="onFiltersApplied($event)"
-    ></app-filters>
+    <div class="m-5 sticky top-64 hidden sm:block">
+      <h2 class="font-semibold text-2xl">FILTRA TUS RESULTADOS</h2>
+      <app-filters
+        [categories]="categories"
+        [minPrice]="minPrice"
+        [maxPrice]="maxPrice"
+        [selectedCategories]="selectedCategories"
+        [sortBy]="sortBy"
+        [ascending]="ascending"
+        (filtersApplied)="onFiltersApplied($event)"
+      ></app-filters>
+    </div>
 
     <div class="flex flex-col mt-20 mb-10 gap-10 mx-auto">
       <section
-        class="flex flex-col sm:flex-row w-full justify-around border border-red-600 sm:gap-10 gap-4"
+        class="flex flex-col sm:flex-row w-full justify-around p-4 sm:gap-10 gap-4"
       >
         <input
           type="text"
@@ -29,6 +31,18 @@
           [(ngModel)]="searchTerm"
           (ngModelChange)="searchByName()"
         />
+
+        <app-filters
+          class="sm:hidden"
+          [categories]="categories"
+          [minPrice]="minPrice"
+          [maxPrice]="maxPrice"
+          [selectedCategories]="selectedCategories"
+          [sortBy]="sortBy"
+          [ascending]="ascending"
+          (filtersApplied)="onFiltersApplied($event)"
+        ></app-filters>
+
         <button
           class="sm:w-1/6 h-12 px-2 text-white hover:scale-105 shadow-lg text-2xl font-bold bg-[#FC0382] rounded-2xl min-w-[100px]"
         >
