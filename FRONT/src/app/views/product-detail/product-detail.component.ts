@@ -13,6 +13,12 @@ export class ProductDetailComponent {
   product: Product | null = null;
   productID: string | null = null;
   products: Product[] = [];
+  imgs = [
+    this.product?.IMAGEN,
+    this.product?.IMAGEN,
+    this.product?.IMAGEN,
+    this.product?.IMAGEN,
+  ];
   userId: string = '';
   updatedProduct: any = {};
   cantidad: number = 1;

@@ -42,17 +42,29 @@ export class LandingComponent {
     },
   ];
   list1 = [
-    { img: 'assets/contact.svg', name: 'CONTACTO' },
-    { img: 'assets/team.svg', name: 'NOSOTROS' },
-    { img: 'assets/door.svg', name: 'ÚNETENOS' },
-    { img: 'assets/menu.svg', name: 'CARTA' },
+    { img: 'assets/contact.svg', name: 'CONTACTO', ref: '/contact' },
+    { img: 'assets/team.svg', name: 'NOSOTROS', ref: '/about' },
+    { img: 'assets/door.svg', name: 'ÚNETENOS', ref: '/team' },
+    { img: 'assets/menu.svg', name: 'CARTA', ref: '/menu' },
   ];
   list2 = [
-    { id: 1, ref: '/', img: 'assets/instagram.svg' },
-    { id: 2, ref: '/', img: 'assets/facebook.svg' },
-    { id: 3, ref: '/', img: 'assets/mail.svg' },
-    { id: 4, ref: '/', img: 'assets/whatsapp.svg' },
-    { id: 5, ref: '/', img: 'assets/tiktok.svg' },
+    {
+      id: 1,
+      ref: 'https://www.instagram.com/la_frutita/',
+      img: 'assets/instagram.svg',
+    },
+    {
+      id: 2,
+      ref: 'https://www.facebook.com/lafrutitaperu',
+      img: 'assets/facebook.svg',
+    },
+    { id: 3, ref: 'mailto:lafrutitaperu1@gmail.com', img: 'assets/mail.svg' },
+    { id: 4, ref: 'https://wa.me/943802701', img: 'assets/whatsapp.svg' },
+    {
+      id: 5,
+      ref: 'https://www.tiktok.com/@la.frutita',
+      img: 'assets/tiktok.svg',
+    },
   ];
   list3 = [
     {

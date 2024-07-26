@@ -1,100 +1,49 @@
 <div class="justify-center max-w-[1600px] mx-auto relative pt-20">
   <a
-    class="absolute top-12 left-5 text-[#E21F71] font-bold text-lg cursor-pointer"
+    class="absolute top-12 left-5 text-[#FC0382] font-bold text-lg cursor-pointer"
     onclick="window.history.back();"
   >
     < Retroceder
   </a>
 
-  <section class="flex mt-5 py-10 px-5 w-[90%] justify-evenly mx-auto">
-    <div class="md:flex-1 px-4 max-h-[500px] max-w-[500px] w-1/2">
+  <section class="flex flex-col lg:flex-row mt-5 py-10 mx-auto">
+    <div class="flex flex-col lg:flex-row xl:flex-1 gap-4 lg:w-[60%] p-10">
       <div
-        class="aspect-square overflow-hidden bg-gray-100 flex items-center justify-center shadow-xl"
+        class="overflow-hidden bg-gray-300 flex items-center justify-center aspect-square lg:w-full rounded-3xl"
       >
-        <img class="object-cover" [src]="product?.IMAGEN" />
+        <img class="object-cover w-full h-full" [src]="imgs[0]" />
+      </div>
+
+      <div
+        class="flex flex-wrap lg:flex-col justify-between w-full h-auto lg:w-2/6"
+      >
+        <div
+          *ngFor="let img of imgs.slice(1)"
+          class="aspect-square overflow-hidden bg-gray-100 flex items-center justify-center shadow-xl w-[30%] lg:w-[90%] lg:mx-auto rounded-2xl"
+        >
+          <img class="object-cover w-full h-full" [src]="img" />
+        </div>
       </div>
     </div>
 
     <div
-      class="md:flex-1 px-28 justify-center items-center flex flex-col max-w-[800px]"
+      class="justify-center lg:justify-around items-center flex flex-col lg:w-[40%] p-5 sm:p-10 gap-8"
     >
-      <h2 class="font-semibold md:text-4xl text-center mb-10">
+      <h2 class="font-bold text-2xl sm:text-4xl lg:justify-start lg:w-full">
         {{ product?.CATEGORIAS }} {{ product?.NOMBRE }}
       </h2>
 
-      <p class="text-gray-500 mb-20">
+      <p class="text-lg sm:text-xl lg:w-full text-justify">
         {{ product?.DESCRIPCION }}
       </p>
 
-      <div class="flex py-5 gap-10">
-        <div class="flex">
-          <span class="font-bold text-3xl">S/. {{ product?.PRECIO }}</span>
-        </div>
-
-        <div class="flex gap-5 items-center">
-          <div
-            class="w-10 h-10 bg-white rounded-full flex justify-center items-center cursor-pointer"
-            (click)="disminuirCantidad()"
-          >
-            <svg
-              width="25px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M6 12L18 12"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-          <div class="text-black text-2xl font-semibold">{{ cantidad }}</div>
-          <div
-            class="w-10 h-10 bg-white rounded-full flex justify-center items-center text-2xl font-bold cursor-pointer"
-            (click)="aumentarCantidad()"
-          >
-            <svg
-              width="25px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M4 12H20M12 4V20"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
+      <span class="font-bold text-3xl lg:w-full"
+        >Precio: S/. {{ product?.PRECIO }}</span
+      >
 
       <button
         type="button"
-        class="h-14 px-6 py-2 font-semibold bg-[#E21F71] hover:bg-[#F76096] text-white w-[80%] text-2xl flex gap-8 justify-center items-center"
+        class="h-14 font-semibold bg-[#FC0382] hover:scale-105 duration-300 text-white w-[95%] sm:w-[85%] text-2xl flex gap-4 justify-center items-center rounded-3xl"
         (click)="addNewProduct(product?._id)"
       >
         Agregar al carrito
@@ -121,11 +70,9 @@
   <section
     *ngIf="products && products.length > 0"
     style="max-width: 1600px"
-    class="relative mx-auto flex flex-col justify-center my-20"
+    class="relative mx-auto flex flex-col justify-center py-10 gap-10"
   >
-    <h2 class="text-4xl flex justify-center font-semibold">
-      OTROS PRODUCTOS SIMILARES
-    </h2>
+    <h2 class="text-4xl flex justify-center font-bold">PRODUCTOS SIMILARES</h2>
     <app-carousel [products]="products.reverse()" />
   </section>
 </div>

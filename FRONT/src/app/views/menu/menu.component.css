@@ -1,0 +1,8 @@
+#products-section {
+  scrollbar-width: thin;
+  scrollbar-color: #fc0382 #ffffff;
+}
+
+#products-section {
+  direction: rtl;
+}

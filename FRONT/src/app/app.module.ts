@@ -22,6 +22,8 @@ import { CartService } from './services/cart.service';
 import { FiltersComponent } from './components/filters/filters.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { TeamComponent } from './views/team/team.component';
+import { AboutComponent } from './views/about/about.component';
+import { MenuComponent } from './views/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { TeamComponent } from './views/team/team.component';
     FiltersComponent,
     ContactComponent,
     TeamComponent,
+    AboutComponent,
+    MenuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ProductService, DarkModeService, CartService],

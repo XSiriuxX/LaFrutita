@@ -1,0 +1,36 @@
+<div class="justify-center max-w-[1600px] mx-auto relative pt-28 flex">
+  <a
+    class="absolute top-12 left-5 text-[#FC0382] font-bold text-lg cursor-pointer"
+    (click)="scrollToCategory('back')"
+  >
+    Retroceder
+  </a>
+  <aside
+    class="w-2/5 sm:w-1/5 h-[900px] justify-center flex flex-col gap-6 p-2"
+  >
+    <div
+      *ngFor="let category of categories"
+      class="hover:bg-[#FC0382] hover:text-white duration-300 rounded-2xl flex justify-center items-center font-semibold text-center text-lg lg:text-2xl cursor-pointer"
+      (click)="scrollToCategory(category)"
+    >
+      <a>{{ category }}</a>
+    </div>
+  </aside>
+  <article
+    *ngIf="getCategoriesList().length > 0"
+    class="w-4/5 h-[1000px] p-4 overflow-y-auto flex flex-wrap justify-around gap-5"
+    id="products-section"
+  >
+    <div
+      *ngFor="let category of getCategoriesList()"
+      class="flex flex-wrap justify-center sm:justify-between gap-5 w-full"
+    >
+      <div id="{{ category }}" *ngFor="let item of groupedProducts[category]">
+        <app-card [product]="item"></app-card>
+      </div>
+      <div class="w-full h-0 flex justify-center my-6">
+        <label class="border-2 border-[#FC0382] w-1/2"></label>
+      </div>
+    </div>
+  </article>
+</div>

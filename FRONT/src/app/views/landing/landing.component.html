@@ -22,10 +22,10 @@
           *ngFor="let item of list1"
           class="w-20 lg:w-24 flex flex-col justify-center gap-2"
         >
-          <img [src]="item.img" class="w-12 mx-auto" /><span
-            class="font-bold lg:text-lg text-sm"
-            >{{ item.name }}</span
-          >
+          <a [href]="item.ref">
+            <img [src]="item.img" class="w-12 mx-auto" />
+            <span class="font-bold lg:text-lg text-sm">{{ item.name }}</span>
+          </a>
         </div>
       </section>
       <section
@@ -35,7 +35,9 @@
           *ngFor="let item of list2"
           class="w-24 flex flex-col justify-center gap-1"
         >
-          <img [src]="item.img" class="w-8 mx-auto" />
+          <a [href]="item.ref" target="_blank">
+            <img [src]="item.img" class="w-8 mx-auto" />
+          </a>
         </div>
       </section>
       <section

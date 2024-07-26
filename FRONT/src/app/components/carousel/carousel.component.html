@@ -1,54 +1,49 @@
-<div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-  <div class="w-full relative flex items-center justify-center">
-    <button
-      aria-label="slide backward"
-      class="mr-5 left-8 w-8 h-8 rounded-full justify-center flex items-center"
-      (click)="goPrev()"
+<div class="w-full flex items-center lg:gap-10 gap-4 px-5 my-8">
+  <button aria-label="slide backward" (click)="goPrev()">
+    <svg
+      width="12"
+      viewBox="0 0 8 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <svg
-        width="12"
-        viewBox="0 0 8 14"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M7 1L1 7L7 13"
-          stroke="#E21F71"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-    <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+      <path
+        d="M7 1L1 7L7 13"
+        stroke="#E21F71"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+
+  <section class="overflow-x-hidden px-8">
+    <div
+      id="slider"
+      class="flex lg:gap-16 md:gap-6 gap-14 items-center transition ease-out duration-700"
+    >
       <div
-        id="slider"
-        class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center transition ease-out duration-700"
+        *ngFor="let product of products"
+        class="flex justify-center lg:min-w-[300px] min-w-[200px] m"
       >
-        <section *ngFor="let product of products" class="min-w-[300px]">
-          <app-card [product]="product"></app-card>
-        </section>
+        <app-card [product]="product"></app-card>
       </div>
     </div>
-    <button
-      aria-label="slide forward"
-      class="ml-5 right-8 w-8 h-8 rounded-full justify-center flex items-center"
-      (click)="goNext()"
+  </section>
+
+  <button aria-label="slide forward" (click)="goNext()">
+    <svg
+      width="12"
+      viewBox="0 0 8 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <svg
-        width="12"
-        viewBox="0 0 8 14"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M1 1L7 7L1 13"
-          stroke="#E21F71"
-          stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-  </div>
+      <path
+        d="M1 1L7 7L1 13"
+        stroke="#E21F71"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
 </div>

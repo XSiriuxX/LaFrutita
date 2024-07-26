@@ -21,7 +21,7 @@ export class ProductsComponent {
   ascending: boolean = false;
 
   currentPage: number = 1;
-  itemsPerPage: number = 12;
+  itemsPerPage: number = 30;
 
   constructor(
     public productService: ProductService,
