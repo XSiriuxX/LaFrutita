@@ -1,6 +1,6 @@
 <nav
   id="header"
-  class="w-full z-30 sticky top-0 bg-white items-center p-6 text-[#FC0382] font-semibold xl:text-2xl text-xl duration-300"
+  class="w-full z-30 sticky top-0 bg-white items-center p-4 text-[#FC0382] font-semibold xl:text-2xl text-xl duration-300"
 >
   <div class="w-full mx-auto flex justify-between">
     <a href="/" class="flex items-center">
@@ -23,7 +23,7 @@
     <input class="hidden" type="checkbox" id="menu-toggle" #menuToggle />
 
     <div class="hidden lg:flex justify-between" id="nav-content">
-      <ul class="md:flex items-center gap-8 font-semibold">
+      <ul class="md:flex items-center gap-8 font-semibold ">
         <li *ngFor="let item of NavbarList">
           <a class="inline-block hover:font-bold" [href]="item.ref">{{
             item.title
@@ -32,7 +32,7 @@
         <li
           class="bg-[#FC0382] px-4 py-2 rounded-2xl text-white duration-300 transform hover:scale-110"
         >
-          <a href="/menu">CARTA</a>
+          <a href="/menu">Carta</a>
         </li>
       </ul>
     </div>
@@ -54,7 +54,7 @@
       <li
         class="bg-[#FC0382] px-4 py-2 rounded-2xl text-white duration-300 transform hover:scale-110 justify-center"
       >
-        <a href="/menu">CARTA</a>
+        <a href="/menu">Carta</a>
       </li>
     </ul>
   </div>

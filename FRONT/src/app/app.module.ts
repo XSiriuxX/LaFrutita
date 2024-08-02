@@ -24,6 +24,7 @@ import { ContactComponent } from './views/contact/contact.component';
 import { TeamComponent } from './views/team/team.component';
 import { AboutComponent } from './views/about/about.component';
 import { MenuComponent } from './views/menu/menu.component';
+import { NotfoundComponent } from './views/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { MenuComponent } from './views/menu/menu.component';
     TeamComponent,
     AboutComponent,
     MenuComponent,
+    NotfoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ProductService, DarkModeService, CartService],

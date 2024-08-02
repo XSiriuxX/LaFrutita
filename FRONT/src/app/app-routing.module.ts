@@ -8,6 +8,7 @@ import { ContactComponent } from './views/contact/contact.component';
 import { TeamComponent } from './views/team/team.component';
 import { AboutComponent } from './views/about/about.component';
 import { MenuComponent } from './views/menu/menu.component';
+import { NotfoundComponent } from './views/notfound/notfound.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent },
   { path: 'about', component: AboutComponent },
   { path: 'menu', component: MenuComponent },
+  { path: '**', component: NotfoundComponent },
 ];
 
 @NgModule({

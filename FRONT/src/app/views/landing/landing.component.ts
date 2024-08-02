@@ -42,10 +42,10 @@ export class LandingComponent {
     },
   ];
   list1 = [
-    { img: 'assets/contact.svg', name: 'CONTACTO', ref: '/contact' },
-    { img: 'assets/team.svg', name: 'NOSOTROS', ref: '/about' },
-    { img: 'assets/door.svg', name: 'ÚNETENOS', ref: '/team' },
-    { img: 'assets/menu.svg', name: 'CARTA', ref: '/menu' },
+    { img: 'assets/contact.svg', name: 'Contacto', ref: '/contact' },
+    { img: 'assets/team.svg', name: 'Nosotros', ref: '/about' },
+    { img: 'assets/door.svg', name: 'Únetenos', ref: '/team' },
+    { img: 'assets/menu.svg', name: 'Carta', ref: '/menu' },
   ];
   list2 = [
     {
