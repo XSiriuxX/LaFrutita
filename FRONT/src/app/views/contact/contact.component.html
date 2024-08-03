@@ -5,8 +5,13 @@
   >
     < Retroceder
   </a>
-  <section class="flex flex-col pt-32 gap-10 max-w-[1400px] mx-auto">
-    <div class="flex flex-col gap-6 mx-auto text-center p-6">
+
+  <section
+    class="flex flex-col pt-32 gap-10 max-w-[1400px] mx-auto lg:flex-row lg:px-28 lg:justify-between"
+  >
+    <div
+      class="flex flex-col gap-6 mx-auto text-center p-6 lg:mx-0 lg:w-1/2 lg:text-left lg:p-2 lg:font-semibold"
+    >
       <p class="text-3xl font-bold">Contacta con Nosotros</p>
       <p>
         Hola, ¿cómo estás? En La Frutita, estamos aquí para responder a todas
@@ -19,7 +24,7 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-4 text-lg p-2">
+    <div class="flex flex-col gap-4 text-lg p-2 lg:w-2/5">
       <input
         type="text"
         class="border border-gray-300 px-4 py-2 focus:outline-none focus:border-[#FC0382] rounded-3xl"
@@ -36,19 +41,20 @@
         placeholder="Mensaje"
       ></textarea>
       <button
-        class="p-3 text-2xl font-semibold text-white rounded-3xl bg-[#FC0382] hover:scale-105"
+        class="p-3 text-2xl font-semibold text-white rounded-3xl bg-[#FC0382] hover:scale-105 duration-300"
       >
         Enviar Mensaje
       </button>
     </div>
   </section>
 
-  <section class="flex justify-center px-4 max-w-[1000px] mx-auto gap-8 py-16">
+  <section
+    class="flex flex-col justify-center max-w-[1400px] mx-auto gap-8 py-20 text-center lg:flex-row-reverse lg:px-28 lg:py-14 lg:justify-between lg:font-semibold"
+  >
     <div
-      class="container py-8 px-6 mx-auto flex flex-col my-auto text-xl gap-2"
+      class="container mx-auto flex flex-col text-xl gap-2 lg:w-2/5 lg:text-left lg:mx-0 lg:p-2"
     >
-      <h2 class="text-3xl font-semibold">¿DONDE ENCONTRARNOS?</h2>
-      <p class="mt-4">Ubicanos en nuestros 3 locales en la ciudad de Ica.</p>
+      <p class="mb-4">Nos puedes ubicar en estos 3 locales físicos:</p>
       <label
         (click)="
           showMap(
@@ -58,7 +64,7 @@
         "
         [class.selected]="selectedMap === 'Puente Blanco'"
       >
-        Urb. Puente Blanco, II Etapa, B-8
+        Urb. Puente Blanco, B-8
       </label>
       <label
         (click)="
@@ -82,13 +88,15 @@
       >
         C. Camana 425
       </label>
+      <p class="mt-4">
+        ¡Te esperamos en La Frutita para disfrutar de una experiencia
+        gastronómica única!
+      </p>
     </div>
+
     <iframe
       id="mapFrame"
-      width="800"
-      height="400"
-      style="border: 0"
-      allowfullscreen=""
+      class="w-11/12 h-80 mx-auto lg:w-1/2 lg:mx-0"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>

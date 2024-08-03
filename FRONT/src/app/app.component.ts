@@ -1,5 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
-import { DarkModeService } from './services/dark-mode.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,4 @@ import { DarkModeService } from './services/dark-mode.service';
 })
 export class AppComponent {
   title = 'FRONT';
-
-  constructor(public darkModeService: DarkModeService) {}
-
-  @HostBinding('class.dark') get mode() {
-    return this.darkModeService.darkMode();
-  }
 }

@@ -1,13 +1,13 @@
 <nav
   id="header"
-  class="w-full z-30 sticky top-0 bg-white items-center p-4 text-[#FC0382] font-semibold xl:text-2xl text-xl duration-300"
+  class="w-full z-30 sticky top-0 bg-white items-center p-2 text-[#FC0382] font-semibold xl:text-2xl text-xl duration-300"
 >
   <div class="w-full mx-auto flex justify-between">
     <a href="/" class="flex items-center">
       <img
         src="assets/LogoFrutitaGrande.svg"
         alt="Logo"
-        class="w-52 hidden sm:block"
+        class="w-48 hidden sm:block"
       />
       <img
         src="assets/LogoFrutitaPequeñoCereza.svg"
@@ -23,7 +23,7 @@
     <input class="hidden" type="checkbox" id="menu-toggle" #menuToggle />
 
     <div class="hidden lg:flex justify-between" id="nav-content">
-      <ul class="md:flex items-center gap-8 font-semibold ">
+      <ul class="md:flex items-center gap-8 font-semibold">
         <li *ngFor="let item of NavbarList">
           <a class="inline-block hover:font-bold" [href]="item.ref">{{
             item.title

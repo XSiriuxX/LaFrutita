@@ -1,135 +1,139 @@
 <div class="justify-center max-w-[1600px] mx-auto relative pt-28">
   <a
-    class="absolute top-12 left-5 text-[#E21F71] font-bold text-lg cursor-pointer"
+    class="absolute top-12 left-5 text-[#FC0382] font-bold text-lg cursor-pointer"
     onclick="window.history.back();"
   >
     < Retroceder
   </a>
 
-  <div class="mx-auto justify-center px-6 md:flex xl:px-10 gap-2">
-    <div class="carrito xl:w-2/3" style="max-height: 75vh">
-      <h1 class="mb-10 text-2xl font-bold">MI CARRITO</h1>
+  <section
+    class="mx-auto justify-center px-2 flex flex-col lg:flex-row lg:py-4 lg:px-0"
+  >
+    <h1 class="text-2xl font-bold flex gap-2 justify-center">
+      MI CARRITO <img src="assets/cart.svg" class="w-7" />
+    </h1>
 
+    <div
+      class="carrito lg:w-2/3 p-4 gap-4 my-4 flex flex-col max-h-[1000px] overflow-y-auto"
+    >
       <div
         *ngFor="let product of cart"
-        class="justify-between mb-6 rounded-lg p-2 sm:flex sm:justify-start"
+        class="flex flex-col text-center gap-4 lg:flex-wrap border border-red-400"
       >
-        <img [src]="product.IMAGEN" alt="product-image" class="w-60" />
-        <div class="sm:ml-4 sm:flex sm:w-full sm:justify-between">
-          <div class="mt-5 sm:mt-0">
-            <h2 class="text-xl font-bold">
-              ({{ product.CATEGORIAS }}) {{ product.NOMBRE }}
-            </h2>
-            <p class="mt-1 text-lg font-semibold">
-              {{ product.TIPO }}
-            </p>
-            <p class="mt-1 text-base">
-              {{ product.DESCRIPCION }}
-            </p>
-          </div>
+        <img
+          [src]="product.IMAGEN"
+          alt="product-image"
+          class="w-60 rounded-3xl mx-auto"
+        />
+        <p class="text-2xl font-bold text-[#FC0382]">
+          S/. {{ product.PRECIO }}
+        </p>
+        <h2 class="text-xl font-bold">
+          ({{ product.CATEGORIAS }} {{ product.TIPO }}) {{ product.NOMBRE }}
+        </h2>
+        <p>
+          {{ product.DESCRIPCION }}
+        </p>
 
-          <div
-            class="flex justify-between ml-8 sm:space-y-6 sm:mt-0 sm:block sm:space-x-6"
-          >
-            <div class="flex gap-5 items-center">
-              <div
-                class="w-10 h-10 bg-white rounded-full flex justify-center items-center cursor-pointer"
-                (click)="disminuirCantidad()"
+        <div class="flex justify-between w-full">
+          <div class="flex gap-6 text-[#FC0382]">
+            <div
+              class="w-8 h-8 bg-white rounded-full flex justify-center items-center cursor-pointer"
+              (click)="disminuirCantidad()"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  width="25px"
-                  height="25px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path
-                      d="M6 12L18 12"
-                      stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="text-black text-2xl font-semibold">
-                {{ product.CANTIDAD }}
-              </div>
-              <div
-                class="w-10 h-10 bg-white rounded-full flex justify-center items-center text-2xl font-bold cursor-pointer"
-                (click)="aumentarCantidad()"
-              >
-                <svg
-                  width="25px"
-                  height="25px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path
-                      d="M4 12H20M12 4V20"
-                      stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-            </div>
-
-            <div class="flex items-center text-xl gap-4 font-semibold">
-              <p>S/. {{ product.PRECIO }}</p>
-              <button class="text-red-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4"
-                >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
                   <path
+                    d="M6 12L18 12"
+                    stroke="#FC0382"
+                    stroke-width="4"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
-                  />
-                </svg>
-              </button>
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="text-2xl font-bold">
+              {{ product.CANTIDAD }}
+            </div>
+            <div
+              class="w-8 h-8 bg-white rounded-full flex justify-center items-center cursor-pointer"
+              (click)="aumentarCantidad()"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M4 12H20M12 4V20"
+                    stroke="#FC0382"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
             </div>
           </div>
+
+          <button class="text-red-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Sub total -->
-    <div class="md:w-1/3 px-2">
-      <h1 class="mb-10 text-2xl font-bold">RESUMEN DE LA COMPRA</h1>
+    <div class="lg:w-1/3 0 lg:px-4 text-center">
+      <h1 class="my-6 text-xl lg:text-2xl font-bold flex gap-3 justify-center">
+        RESUMEN DE LA COMPRA <img class="flex" src="assets/compra.svg" />
+      </h1>
 
-      <div
-        class="min-h-[400px] rounded-lg bg-white p-6 shadow-md gap-8 flex flex-col"
-      >
+      <div class="rounded-3xl bg-white p-6 shadow-md gap-8 flex flex-col my-8">
         <div class="flex justify-between">
           <p>Subtotal ( Items)</p>
           <p>S/. {{ subtotal | number : "1.2-2" }}</p>
         </div>
 
-        <div class="flex justify-between" (click)="toggleenvio()">
+        <div
+          class="flex justify-between cursor-pointer"
+          (click)="toggleenvio()"
+        >
           <p [class.font-bold]="envioSeleccionado">Costo de envio</p>
           <p [class.font-bold]="envioSeleccionado">S/. {{ envio }}</p>
         </div>
@@ -148,11 +152,11 @@
         </div>
 
         <button
-          class="mt-4 p-3 text-xl font-semibold text-white rounded-md bg-[#E21F71] hover:bg-[#F76096]"
+          class="mt-4 p-3 text-xl font-semibold text-white rounded-2xl bg-[#FC0382] hover:scale-105 duration-300"
         >
-          Confirmar la compra
+          Realizar Pedido
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </div>
