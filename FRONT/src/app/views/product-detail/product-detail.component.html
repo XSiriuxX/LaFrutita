@@ -1,25 +1,20 @@
 <div class="justify-center max-w-[1600px] mx-auto relative pt-20">
-  <a
-    class="absolute top-12 left-5 text-[#FC0382] font-bold text-lg cursor-pointer"
-    onclick="window.history.back();"
-  >
-    < Retroceder
-  </a>
+  <app-backbutton />
 
   <section class="flex flex-col lg:flex-row mt-5 py-10 mx-auto">
-    <div class="flex flex-col lg:flex-row xl:flex-1 gap-4 lg:w-[60%] p-10">
+    <div class="flex flex-col md:flex-row xl:flex-1 gap-4 lg:w-[60%] p-10">
       <div
-        class="overflow-hidden bg-gray-300 flex items-center justify-center aspect-square lg:w-full rounded-3xl"
+        class="overflow-hidden bg-gray-300 flex items-center justify-center aspect-square md:w-full rounded-3xl"
       >
         <img class="object-cover w-full h-full" [src]="imgs[0]" />
       </div>
 
       <div
-        class="flex flex-wrap lg:flex-col justify-between w-full h-auto lg:w-2/6"
+        class="flex flex-wrap md:flex-col justify-between w-full h-auto md:w-2/6"
       >
         <div
           *ngFor="let img of imgs.slice(1)"
-          class="aspect-square overflow-hidden bg-gray-100 flex items-center justify-center shadow-xl w-[30%] lg:w-[90%] lg:mx-auto rounded-2xl"
+          class="aspect-square overflow-hidden bg-gray-100 flex items-center justify-center shadow-xl w-[30%] md:w-[90%] lg:mx-auto rounded-2xl"
         >
           <img class="object-cover w-full h-full" [src]="img" />
         </div>

@@ -1,4 +1,5 @@
 import { Component, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -9,6 +10,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class CartComponent {
   cart: {
+    _id: string;
     IMAGEN: string;
     CATEGORIAS: string;
     TIPO: string;
@@ -26,7 +28,8 @@ export class CartComponent {
 
   constructor(
     private cartService: CartService,
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -126,4 +129,10 @@ export class CartComponent {
   //     .addProduct(this.updatedProduct)
   //     .subscribe((res) => this.getProductsCart());
   // }
+
+  redirectToProduct(productId: string) {
+    this.router.navigate(['/product', productId]).then(() => {
+      window.location.reload();
+    });
+  }
 }

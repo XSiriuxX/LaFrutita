@@ -16,17 +16,17 @@
     </svg>
   </button>
 
-  <section class="overflow-x-hidden px-8">
+  <section class="overflow-x-hidden p-4">
     <div
       id="slider"
       class="flex lg:gap-16 md:gap-6 gap-14 items-center transition ease-out duration-700"
     >
-      <div
+      <app-card
         *ngFor="let product of products"
-        class="flex justify-center lg:min-w-[300px] min-w-[200px] m"
-      >
-        <app-card [product]="product"></app-card>
-      </div>
+        [product]="product"
+        class="flex justify-center lg:min-w-[300px] min-w-[200px] hover:scale-105 duration-300"
+        (click)="redirectToProduct(product._id)"
+      ></app-card>
     </div>
   </section>
 

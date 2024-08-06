@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/models/product.model';
 
 @Component({
@@ -25,10 +26,16 @@ export class CarouselComponent {
     this.slider.style.transform = 'translateX(' + this.defaultTransform + 'px)';
   }
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.slider = document.getElementById('slider');
     this.defaultTransform = 0;
+  }
+
+  redirectToProduct(productId: string) {
+    this.router.navigate(['/product', productId]).then(() => {
+      window.location.reload();
+    });
   }
 }
