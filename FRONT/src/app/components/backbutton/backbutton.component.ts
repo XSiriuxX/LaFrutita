@@ -13,6 +13,6 @@ export class BackbuttonComponent {
     window.history.back();
     setTimeout(() => {
       window.location.reload();
-    }, 1);
+    }, 10);
   }
 }
