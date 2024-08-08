@@ -1,0 +1,5 @@
+.selected {
+  color: #fc0382;
+  text-decoration: underline;
+  transform: scale(1.03);
+}

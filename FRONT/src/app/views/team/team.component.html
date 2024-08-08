@@ -1,3 +1,51 @@
-<section>
+<article
+  class="justify-center max-w-[2000px] mx-auto relative pt-24 pb-20 flex flex-col"
+>
   <app-backbutton />
-</section>
+
+  <section class="w-full gap-14 flex flex-col py-8">
+    <ul class="flex flex-wrap gap-8 w-full justify-center text-2xl font-bold">
+      <li
+        *ngFor="let item of list1"
+        [class.selected]="item.Name === selected"
+        (click)="newselectect(item.Name)"
+        class="cursor-pointer duration-500"
+      >
+        {{ item.Name }}
+      </li>
+    </ul>
+
+    <ul class="flex flex-wrap gap-6 w-full justify-center lg:gap-10">
+      <li
+        *ngFor="let item of content"
+        class="flex flex-col gap-4 w-5/12 text-center sm:max-w-[25%] md:max-w-[20%] lg:max-w-[18%] xl:max-w-[14%]"
+      >
+        <img
+          [src]="item.img"
+          class="w-full h-52 sm:h-68 lg:h-80 rounded-3xl bg-white"
+        />
+        <h2 class="font-bold text-lg">{{ item.title }}</h2>
+        <p class="text-md">{{ item.description }}</p>
+      </li>
+    </ul>
+  </section>
+
+  <section
+    class="w-full py-20 px-2 mt-10 gap-8 flex flex-col text-center font-medium text-lg md:px-10 md:text-xl lg:py-32 xl:py-48 relative"
+  >
+    <h2 class="font-bold text-2xl md:text-3xl relative z-10">
+      UNETE A NUESTRO EQUIPO
+    </h2>
+    <p class="relative z-10">
+      Buscamos personas que les interese el estilo de vida que compartimos y que
+      sueñen en grande. Una gran sonrisa es parte de lo que somos.
+    </p>
+    <p class="relative z-10">
+      Manda tu CV a <br />
+      lafrutita@gmail.com o al +51 987 654 321<br />
+      y te contactamos pronto 🙂
+    </p>
+
+    <img class="bg-white absolute top-0 left-0 w-full h-full -z-1" src="" />
+  </section>
+</article>
